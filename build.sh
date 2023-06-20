@@ -8,9 +8,6 @@ python manage.py collectstatic --no-input
 python manage.py makemigrations
 python manage.py migrate
 
-mkdir -p /media
-cp -r media/* /media/
-
 echo "Creating superuser..."
 python manage.py shell << END
 from django.contrib.auth import get_user_model
