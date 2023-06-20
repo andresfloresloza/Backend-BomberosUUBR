@@ -8,8 +8,8 @@ python manage.py collectstatic --no-input
 python manage.py makemigrations
 python manage.py migrate
 
-mkdir -p /app/media
-cp -r media/* /app/media/
+mkdir -p /media
+cp -r media/* /media/
 
 echo "Creating superuser..."
 python manage.py shell << END
