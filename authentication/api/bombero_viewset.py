@@ -21,7 +21,7 @@ class BomberoSerializer(serializers.ModelSerializer):
         model = BomberoUser
         fields = (
             'id', 'username', 'password', 'password2', 'image', 'legajo', 'state', 'grade', 'first_name', 'last_name',
-            'address', 'phone_number', 'blood_type','position')
+            'address', 'phone_number', 'blood_type', 'position')
 
     extra_kwargs = {
         'first_name': {'required': True},
