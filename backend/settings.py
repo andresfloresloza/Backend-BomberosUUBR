@@ -153,7 +153,7 @@ REST_FRAMEWORK = {
 }
 
 SIMPLE_JWT = {
-    "ACCESS_TOKEN_LIFETIME": timedelta(minutes=1000),
+    "ACCESS_TOKEN_LIFETIME": timedelta(minutes=120), """2hrs maximo la sesion"""
     "REFRESH_TOKEN_LIFETIME": timedelta(days=1)
 }
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')

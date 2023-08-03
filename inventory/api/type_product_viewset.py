@@ -20,7 +20,6 @@ class TypeProductSerializer(serializers.ModelSerializer):
             )
         ]
 
-
 class TypeProductViewSet(viewsets.ModelViewSet):
     serializer_class = TypeProductSerializer
     queryset = TypeProduct.objects.all()

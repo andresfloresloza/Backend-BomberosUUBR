@@ -21,7 +21,7 @@ class BomberoSerializer(serializers.ModelSerializer):
         model = BomberoUser
         fields = (
             'id', 'username', 'password', 'password2', 'image', 'legajo', 'state', 'grade', 'first_name', 'last_name',
-            'address', 'phone_number', 'blood_type')
+            'address', 'phone_number', 'blood_type','position')
 
     extra_kwargs = {
         'first_name': {'required': True},
@@ -48,6 +48,7 @@ class BomberoSerializer(serializers.ModelSerializer):
             legajo=validated_data.get('legajo'),
             state=validated_data.get('state'),
             grade=validated_data.get('grade'),
+            position=validated_data.get('position'),
             first_name=validated_data.get('first_name'),
             last_name=validated_data.get('last_name'),
             address=validated_data.get('address'),

@@ -7,6 +7,7 @@ class MyTokenObtainPairSerializer(TokenObtainPairSerializer):
         data = super().validate(attrs)
         refresh = self.get_token(self.user)
         data['id'] = self.user.id
+        data['position'] = self.user.position
         data['is_superuser'] = self.user.is_superuser
         data['first_name'] = self.user.first_name
         return data

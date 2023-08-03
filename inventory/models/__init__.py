@@ -1,3 +1,3 @@
 from .type_product import TypeProduct
-from .epp_estructural_forestal import EppEstructuralForestal
-from .herramientas_accesorios import HerramientasAccesorios
+from .epp import Epp
+from .otros import Otros
