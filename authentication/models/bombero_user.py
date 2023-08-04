@@ -8,6 +8,7 @@ class BomberoUser(AbstractUser):
 
     image = models.ImageField(upload_to="bombero/", blank='', default="bombero/perfil.png")
     legajo = models.CharField(max_length=100, blank=True, unique=True)
+    cargo = models.CharField(max_length=150, blank=True)
     position = models.CharField(max_length=150, blank=True)
     state = models.CharField(max_length=150, blank=True)
     grade = models.CharField(max_length=150, blank=True)
