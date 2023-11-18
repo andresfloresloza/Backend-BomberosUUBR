@@ -23,10 +23,10 @@ from rest_framework_simplejwt.views import TokenRefreshView, TokenVerifyView
 from authentication.api import MyTokenObtainPairView
 
 urlpatterns = [
-                  path('admin/', admin.site.urls),
-                  path('', include("authentication.urls")),
-                  path('', include("inventory.urls")),
-                  path('login/', MyTokenObtainPairView.as_view(), name='token_obtain_pair'),
-                  path('token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
-                  path('token/verify/', TokenVerifyView.as_view(), name='token_verify'),
-              ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+    path('admin/', admin.site.urls),
+    path('', include("authentication.urls")),
+    path('', include("inventory.urls")),
+    path('login/', MyTokenObtainPairView.as_view(), name='token_obtain_pair'),
+    path('token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
+    path('token/verify/', TokenVerifyView.as_view(), name='token_verify'),
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

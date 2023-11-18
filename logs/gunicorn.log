@@ -1,0 +1,2452 @@
+[2023-11-15 02:34:16 +0000] [94388] [DEBUG] Current configuration:
+  config: ./gunicorn.conf.py
+  wsgi_app: None
+  bind: ['unix:/tmp/gunicorn-apiBomberosUubr.sock']
+  backlog: 2048
+  workers: 5
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/nur/Backend-BomberosUUBR
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 1000
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/nur/Backend-BomberosUUBR/logs/gunicorn.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: apiBomberosUubr
+  default_proc_name: backend.wsgi:application
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f969845b100>
+  on_reload: <function OnReload.on_reload at 0x7f969845b240>
+  when_ready: <function WhenReady.when_ready at 0x7f969845b380>
+  pre_fork: <function Prefork.pre_fork at 0x7f969845b4c0>
+  post_fork: <function Postfork.post_fork at 0x7f969845b600>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f969845b740>
+  worker_int: <function WorkerInt.worker_int at 0x7f969845b880>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f969845b9c0>
+  pre_exec: <function PreExec.pre_exec at 0x7f969845bb00>
+  pre_request: <function PreRequest.pre_request at 0x7f969845bc40>
+  post_request: <function PostRequest.post_request at 0x7f969845bce0>
+  child_exit: <function ChildExit.child_exit at 0x7f969845be20>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f969845bf60>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f969846c0e0>
+  on_exit: <function OnExit.on_exit at 0x7f969846c220>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2023-11-15 02:34:16 +0000] [94388] [INFO] Starting gunicorn 20.1.0
+[2023-11-15 02:34:16 +0000] [94388] [DEBUG] Arbiter booted
+[2023-11-15 02:34:16 +0000] [94388] [INFO] Listening at: unix:/tmp/gunicorn-apiBomberosUubr.sock (94388)
+[2023-11-15 02:34:16 +0000] [94388] [INFO] Using worker: sync
+[2023-11-15 02:34:16 +0000] [94393] [INFO] Booting worker with pid: 94393
+[2023-11-15 02:34:16 +0000] [94394] [INFO] Booting worker with pid: 94394
+[2023-11-15 02:34:16 +0000] [94395] [INFO] Booting worker with pid: 94395
+[2023-11-15 02:34:16 +0000] [94396] [INFO] Booting worker with pid: 94396
+[2023-11-15 02:34:16 +0000] [94397] [INFO] Booting worker with pid: 94397
+[2023-11-15 02:34:16 +0000] [94388] [DEBUG] 5 workers
+[2023-11-15 02:35:12 +0000] [94388] [INFO] Handling signal: int
+[2023-11-15 02:35:13 +0000] [94394] [INFO] Worker exiting (pid: 94394)
+[2023-11-15 02:35:13 +0000] [94395] [INFO] Worker exiting (pid: 94395)
+[2023-11-15 02:35:13 +0000] [94396] [INFO] Worker exiting (pid: 94396)
+[2023-11-15 02:35:13 +0000] [94393] [INFO] Worker exiting (pid: 94393)
+[2023-11-15 02:35:13 +0000] [94397] [INFO] Worker exiting (pid: 94397)
+[2023-11-15 02:35:13 +0000] [94388] [INFO] Shutting down: Master
+[2023-11-15 02:35:17 +0000] [94408] [DEBUG] Current configuration:
+  config: ./gunicorn.conf.py
+  wsgi_app: None
+  bind: ['unix:/tmp/gunicorn-apiBomberosUubr.sock']
+  backlog: 2048
+  workers: 5
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/nur/Backend-BomberosUUBR
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 1000
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/nur/Backend-BomberosUUBR/logs/gunicorn.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: apiBomberosUubr
+  default_proc_name: backend.wsgi:application
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7fe2f3afb100>
+  on_reload: <function OnReload.on_reload at 0x7fe2f3afb240>
+  when_ready: <function WhenReady.when_ready at 0x7fe2f3afb380>
+  pre_fork: <function Prefork.pre_fork at 0x7fe2f3afb4c0>
+  post_fork: <function Postfork.post_fork at 0x7fe2f3afb600>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7fe2f3afb740>
+  worker_int: <function WorkerInt.worker_int at 0x7fe2f3afb880>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7fe2f3afb9c0>
+  pre_exec: <function PreExec.pre_exec at 0x7fe2f3afbb00>
+  pre_request: <function PreRequest.pre_request at 0x7fe2f3afbc40>
+  post_request: <function PostRequest.post_request at 0x7fe2f3afbce0>
+  child_exit: <function ChildExit.child_exit at 0x7fe2f3afbe20>
+  worker_exit: <function WorkerExit.worker_exit at 0x7fe2f3afbf60>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7fe2f3b0c0e0>
+  on_exit: <function OnExit.on_exit at 0x7fe2f3b0c220>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2023-11-15 02:35:17 +0000] [94408] [INFO] Starting gunicorn 20.1.0
+[2023-11-15 02:35:17 +0000] [94408] [DEBUG] Arbiter booted
+[2023-11-15 02:35:17 +0000] [94408] [INFO] Listening at: unix:/tmp/gunicorn-apiBomberosUubr.sock (94408)
+[2023-11-15 02:35:17 +0000] [94408] [INFO] Using worker: sync
+[2023-11-15 02:35:17 +0000] [94413] [INFO] Booting worker with pid: 94413
+[2023-11-15 02:35:17 +0000] [94414] [INFO] Booting worker with pid: 94414
+[2023-11-15 02:35:17 +0000] [94415] [INFO] Booting worker with pid: 94415
+[2023-11-15 02:35:17 +0000] [94416] [INFO] Booting worker with pid: 94416
+[2023-11-15 02:35:17 +0000] [94417] [INFO] Booting worker with pid: 94417
+[2023-11-15 02:35:17 +0000] [94408] [DEBUG] 5 workers
+[2023-11-15 02:35:32 +0000] [94408] [INFO] Handling signal: int
+[2023-11-15 02:35:32 +0000] [94415] [INFO] Worker exiting (pid: 94415)
+[2023-11-15 02:35:32 +0000] [94416] [INFO] Worker exiting (pid: 94416)
+[2023-11-15 02:35:32 +0000] [94414] [INFO] Worker exiting (pid: 94414)
+[2023-11-15 02:35:32 +0000] [94413] [INFO] Worker exiting (pid: 94413)
+[2023-11-15 02:35:32 +0000] [94417] [INFO] Worker exiting (pid: 94417)
+[2023-11-15 02:35:33 +0000] [94408] [INFO] Shutting down: Master
+[2023-11-15 20:22:26 +0000] [104869] [DEBUG] Current configuration:
+  config: ./gunicorn.conf.py
+  wsgi_app: None
+  bind: ['unix:/tmp/gunicorn-apiBomberosUubr.sock']
+  backlog: 2048
+  workers: 5
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/nur/Backend-BomberosUUBR
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 1000
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/nur/Backend-BomberosUUBR/logs/gunicorn.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: apiBomberosUubr
+  default_proc_name: backend.wsgi:application
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7fdf21e93100>
+  on_reload: <function OnReload.on_reload at 0x7fdf21e93240>
+  when_ready: <function WhenReady.when_ready at 0x7fdf21e93380>
+  pre_fork: <function Prefork.pre_fork at 0x7fdf21e934c0>
+  post_fork: <function Postfork.post_fork at 0x7fdf21e93600>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7fdf21e93740>
+  worker_int: <function WorkerInt.worker_int at 0x7fdf21e93880>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7fdf21e939c0>
+  pre_exec: <function PreExec.pre_exec at 0x7fdf21e93b00>
+  pre_request: <function PreRequest.pre_request at 0x7fdf21e93c40>
+  post_request: <function PostRequest.post_request at 0x7fdf21e93ce0>
+  child_exit: <function ChildExit.child_exit at 0x7fdf21e93e20>
+  worker_exit: <function WorkerExit.worker_exit at 0x7fdf21e93f60>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7fdf21ea40e0>
+  on_exit: <function OnExit.on_exit at 0x7fdf21ea4220>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2023-11-15 20:22:26 +0000] [104869] [INFO] Starting gunicorn 20.1.0
+[2023-11-15 20:22:26 +0000] [104869] [DEBUG] Arbiter booted
+[2023-11-15 20:22:26 +0000] [104869] [INFO] Listening at: unix:/tmp/gunicorn-apiBomberosUubr.sock (104869)
+[2023-11-15 20:22:26 +0000] [104869] [INFO] Using worker: sync
+[2023-11-15 20:22:26 +0000] [104874] [INFO] Booting worker with pid: 104874
+[2023-11-15 20:22:26 +0000] [104875] [INFO] Booting worker with pid: 104875
+[2023-11-15 20:22:26 +0000] [104876] [INFO] Booting worker with pid: 104876
+[2023-11-15 20:22:26 +0000] [104877] [INFO] Booting worker with pid: 104877
+[2023-11-15 20:22:26 +0000] [104878] [INFO] Booting worker with pid: 104878
+[2023-11-15 20:22:26 +0000] [104869] [DEBUG] 5 workers
+[2023-11-15 20:23:14 +0000] [104878] [DEBUG] GET /
+[2023-11-15 20:23:18 +0000] [104877] [DEBUG] GET /usuario/
+[2023-11-15 20:25:16 +0000] [104878] [DEBUG] POST /boaform/admin/formLogin
+[2023-11-15 20:27:11 +0000] [104877] [DEBUG] GET /
+[2023-11-15 20:28:39 +0000] [104878] [DEBUG] GET /usuario/
+[2023-11-15 20:29:38 +0000] [104876] [DEBUG] GET /login/
+[2023-11-15 20:29:52 +0000] [104878] [DEBUG] POST /login/
+[2023-11-15 20:30:40 +0000] [104876] [DEBUG] GET /
+[2023-11-15 20:36:05 +0000] [104875] [DEBUG] GET /
+[2023-11-15 20:36:38 +0000] [104875] [DEBUG] OPTIONS /login/
+[2023-11-15 20:36:38 +0000] [104878] [DEBUG] POST /login/
+[2023-11-15 20:36:39 +0000] [104875] [DEBUG] OPTIONS /usuario/
+[2023-11-15 20:36:39 +0000] [104877] [DEBUG] GET /usuario/
+[2023-11-15 20:37:48 +0000] [104874] [DEBUG] OPTIONS /usuario/2
+[2023-11-15 20:37:48 +0000] [104876] [DEBUG] GET /usuario/2
+[2023-11-15 20:37:48 +0000] [104877] [DEBUG] OPTIONS /usuario/2/
+[2023-11-15 20:37:48 +0000] [104878] [DEBUG] GET /usuario/2/
+[2023-11-15 20:37:52 +0000] [104877] [DEBUG] PUT /usuario/2/
+[2023-11-15 20:37:53 +0000] [104878] [DEBUG] GET /usuario/
+[2023-11-15 20:37:55 +0000] [104876] [DEBUG] PATCH /usuario/2/
+[2023-11-15 20:37:55 +0000] [104878] [DEBUG] GET /usuario/
+[2023-11-15 20:38:27 +0000] [104878] [DEBUG] GET /usuario/
+[2023-11-15 20:38:29 +0000] [104876] [DEBUG] GET /usuario/
+[2023-11-15 20:38:31 +0000] [104878] [DEBUG] GET /usuario/
+[2023-11-15 20:38:33 +0000] [104876] [DEBUG] GET /usuario/
+[2023-11-15 20:38:34 +0000] [104878] [DEBUG] GET /usuario/
+[2023-11-15 20:38:35 +0000] [104876] [DEBUG] GET /usuario/
+[2023-11-15 20:38:37 +0000] [104878] [DEBUG] GET /usuario/
+[2023-11-15 20:38:38 +0000] [104876] [DEBUG] GET /usuario/
+[2023-11-15 20:44:08 +0000] [104874] [DEBUG] GET /
+[2023-11-15 20:56:35 +0000] [105896] [DEBUG] Current configuration:
+  config: ./gunicorn.conf.py
+  wsgi_app: None
+  bind: ['unix:/tmp/gunicorn-apiBomberosUubr.sock']
+  backlog: 2048
+  workers: 5
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/nur/Backend-BomberosUUBR
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 1000
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/nur/Backend-BomberosUUBR/logs/gunicorn.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: apiBomberosUubr
+  default_proc_name: backend.wsgi:application
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7febe8bff100>
+  on_reload: <function OnReload.on_reload at 0x7febe8bff240>
+  when_ready: <function WhenReady.when_ready at 0x7febe8bff380>
+  pre_fork: <function Prefork.pre_fork at 0x7febe8bff4c0>
+  post_fork: <function Postfork.post_fork at 0x7febe8bff600>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7febe8bff740>
+  worker_int: <function WorkerInt.worker_int at 0x7febe8bff880>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7febe8bff9c0>
+  pre_exec: <function PreExec.pre_exec at 0x7febe8bffb00>
+  pre_request: <function PreRequest.pre_request at 0x7febe8bffc40>
+  post_request: <function PostRequest.post_request at 0x7febe8bffce0>
+  child_exit: <function ChildExit.child_exit at 0x7febe8bffe20>
+  worker_exit: <function WorkerExit.worker_exit at 0x7febe8bfff60>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7febe8c100e0>
+  on_exit: <function OnExit.on_exit at 0x7febe8c10220>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2023-11-15 20:56:35 +0000] [105896] [INFO] Starting gunicorn 20.1.0
+[2023-11-15 20:56:35 +0000] [105896] [DEBUG] Arbiter booted
+[2023-11-15 20:56:35 +0000] [105896] [INFO] Listening at: unix:/tmp/gunicorn-apiBomberosUubr.sock (105896)
+[2023-11-15 20:56:35 +0000] [105896] [INFO] Using worker: sync
+[2023-11-15 20:56:35 +0000] [105901] [INFO] Booting worker with pid: 105901
+[2023-11-15 20:56:35 +0000] [105902] [INFO] Booting worker with pid: 105902
+[2023-11-15 20:56:35 +0000] [105903] [INFO] Booting worker with pid: 105903
+[2023-11-15 20:56:35 +0000] [105904] [INFO] Booting worker with pid: 105904
+[2023-11-15 20:56:35 +0000] [105905] [INFO] Booting worker with pid: 105905
+[2023-11-15 20:56:35 +0000] [105896] [DEBUG] 5 workers
+[2023-11-15 20:58:23 +0000] [105896] [INFO] Handling signal: int
+[2023-11-15 20:58:23 +0000] [105902] [INFO] Worker exiting (pid: 105902)
+[2023-11-15 20:58:23 +0000] [105903] [INFO] Worker exiting (pid: 105903)
+[2023-11-15 20:58:23 +0000] [105901] [INFO] Worker exiting (pid: 105901)
+[2023-11-15 20:58:23 +0000] [105905] [INFO] Worker exiting (pid: 105905)
+[2023-11-15 20:58:23 +0000] [105904] [INFO] Worker exiting (pid: 105904)
+[2023-11-15 20:58:24 +0000] [105896] [WARNING] Worker with pid 105903 was terminated due to signal 2
+[2023-11-15 20:58:24 +0000] [105896] [WARNING] Worker with pid 105902 was terminated due to signal 2
+[2023-11-15 20:58:24 +0000] [105896] [WARNING] Worker with pid 105901 was terminated due to signal 2
+[2023-11-15 20:58:24 +0000] [105896] [WARNING] Worker with pid 105905 was terminated due to signal 2
+[2023-11-15 20:58:24 +0000] [105896] [WARNING] Worker with pid 105904 was terminated due to signal 2
+[2023-11-15 20:58:24 +0000] [105896] [INFO] Shutting down: Master
+[2023-11-15 20:59:40 +0000] [105938] [DEBUG] Current configuration:
+  config: ./gunicorn.conf.py
+  wsgi_app: None
+  bind: ['unix:/tmp/gunicorn-apiBomberosUubr.sock']
+  backlog: 2048
+  workers: 5
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/nur/Backend-BomberosUUBR
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 1000
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/nur/Backend-BomberosUUBR/logs/gunicorn.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: apiBomberosUubr
+  default_proc_name: backend.wsgi:application
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f7dd8913100>
+  on_reload: <function OnReload.on_reload at 0x7f7dd8913240>
+  when_ready: <function WhenReady.when_ready at 0x7f7dd8913380>
+  pre_fork: <function Prefork.pre_fork at 0x7f7dd89134c0>
+  post_fork: <function Postfork.post_fork at 0x7f7dd8913600>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f7dd8913740>
+  worker_int: <function WorkerInt.worker_int at 0x7f7dd8913880>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f7dd89139c0>
+  pre_exec: <function PreExec.pre_exec at 0x7f7dd8913b00>
+  pre_request: <function PreRequest.pre_request at 0x7f7dd8913c40>
+  post_request: <function PostRequest.post_request at 0x7f7dd8913ce0>
+  child_exit: <function ChildExit.child_exit at 0x7f7dd8913e20>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f7dd8913f60>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f7dd89240e0>
+  on_exit: <function OnExit.on_exit at 0x7f7dd8924220>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2023-11-15 20:59:40 +0000] [105938] [INFO] Starting gunicorn 20.1.0
+[2023-11-15 20:59:40 +0000] [105938] [DEBUG] Arbiter booted
+[2023-11-15 20:59:40 +0000] [105938] [INFO] Listening at: unix:/tmp/gunicorn-apiBomberosUubr.sock (105938)
+[2023-11-15 20:59:40 +0000] [105938] [INFO] Using worker: sync
+[2023-11-15 20:59:40 +0000] [105943] [INFO] Booting worker with pid: 105943
+[2023-11-15 20:59:40 +0000] [105944] [INFO] Booting worker with pid: 105944
+[2023-11-15 20:59:40 +0000] [105945] [INFO] Booting worker with pid: 105945
+[2023-11-15 20:59:40 +0000] [105946] [INFO] Booting worker with pid: 105946
+[2023-11-15 20:59:40 +0000] [105947] [INFO] Booting worker with pid: 105947
+[2023-11-15 20:59:40 +0000] [105938] [DEBUG] 5 workers
+[2023-11-15 21:01:11 +0000] [105946] [DEBUG] GET /
+[2023-11-15 21:01:11 +0000] [105945] [DEBUG] GET /
+[2023-11-15 21:03:51 +0000] [105938] [INFO] Handling signal: int
+[2023-11-15 21:03:51 +0000] [105944] [INFO] Worker exiting (pid: 105944)
+[2023-11-15 21:03:51 +0000] [105946] [INFO] Worker exiting (pid: 105946)
+[2023-11-15 21:03:51 +0000] [105947] [INFO] Worker exiting (pid: 105947)
+[2023-11-15 21:03:51 +0000] [105945] [INFO] Worker exiting (pid: 105945)
+[2023-11-15 21:03:51 +0000] [105943] [INFO] Worker exiting (pid: 105943)
+[2023-11-15 21:03:52 +0000] [105938] [INFO] Shutting down: Master
+[2023-11-15 21:04:08 +0000] [105964] [DEBUG] Current configuration:
+  config: ./gunicorn.conf.py
+  wsgi_app: None
+  bind: ['unix:/tmp/gunicorn-apiBomberosUubr.sock']
+  backlog: 2048
+  workers: 5
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/nur/Backend-BomberosUUBR
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 1000
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/nur/Backend-BomberosUUBR/logs/gunicorn.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: apiBomberosUubr
+  default_proc_name: backend.wsgi:application
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7fe51c7a3100>
+  on_reload: <function OnReload.on_reload at 0x7fe51c7a3240>
+  when_ready: <function WhenReady.when_ready at 0x7fe51c7a3380>
+  pre_fork: <function Prefork.pre_fork at 0x7fe51c7a34c0>
+  post_fork: <function Postfork.post_fork at 0x7fe51c7a3600>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7fe51c7a3740>
+  worker_int: <function WorkerInt.worker_int at 0x7fe51c7a3880>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7fe51c7a39c0>
+  pre_exec: <function PreExec.pre_exec at 0x7fe51c7a3b00>
+  pre_request: <function PreRequest.pre_request at 0x7fe51c7a3c40>
+  post_request: <function PostRequest.post_request at 0x7fe51c7a3ce0>
+  child_exit: <function ChildExit.child_exit at 0x7fe51c7a3e20>
+  worker_exit: <function WorkerExit.worker_exit at 0x7fe51c7a3f60>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7fe51c7b40e0>
+  on_exit: <function OnExit.on_exit at 0x7fe51c7b4220>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2023-11-15 21:04:08 +0000] [105964] [INFO] Starting gunicorn 20.1.0
+[2023-11-15 21:04:08 +0000] [105964] [DEBUG] Arbiter booted
+[2023-11-15 21:04:08 +0000] [105964] [INFO] Listening at: unix:/tmp/gunicorn-apiBomberosUubr.sock (105964)
+[2023-11-15 21:04:08 +0000] [105964] [INFO] Using worker: sync
+[2023-11-15 21:04:08 +0000] [105969] [INFO] Booting worker with pid: 105969
+[2023-11-15 21:04:08 +0000] [105970] [INFO] Booting worker with pid: 105970
+[2023-11-15 21:04:08 +0000] [105971] [INFO] Booting worker with pid: 105971
+[2023-11-15 21:04:08 +0000] [105972] [INFO] Booting worker with pid: 105972
+[2023-11-15 21:04:09 +0000] [105973] [INFO] Booting worker with pid: 105973
+[2023-11-15 21:04:09 +0000] [105964] [DEBUG] 5 workers
+[2023-11-15 21:16:41 +0000] [105972] [DEBUG] GET /
+[2023-11-15 21:16:44 +0000] [105969] [DEBUG] GET /
+[2023-11-15 21:16:45 +0000] [105973] [DEBUG] GET /
+[2023-11-15 21:30:35 +0000] [105973] [DEBUG] GET /
+[2023-11-15 21:34:20 +0000] [105964] [WARNING] Worker with pid 105969 was terminated due to signal 1
+[2023-11-15 21:34:20 +0000] [106276] [INFO] Booting worker with pid: 106276
+[2023-11-15 21:34:20 +0000] [106281] [INFO] Booting worker with pid: 106281
+[2023-11-15 21:34:20 +0000] [106285] [INFO] Booting worker with pid: 106285
+[2023-11-15 21:34:20 +0000] [105964] [INFO] Handling signal: hup
+[2023-11-15 21:34:20 +0000] [105964] [INFO] Hang up: Master
+[2023-11-15 21:34:20 +0000] [105964] [DEBUG] Current configuration:
+  config: ./gunicorn.conf.py
+  wsgi_app: None
+  bind: ['unix:/tmp/gunicorn-apiBomberosUubr.sock']
+  backlog: 2048
+  workers: 5
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/nur/Backend-BomberosUUBR
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 1000
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/nur/Backend-BomberosUUBR/logs/gunicorn.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: apiBomberosUubr
+  default_proc_name: backend.wsgi:application
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7fe51c7a3100>
+  on_reload: <function OnReload.on_reload at 0x7fe51c7a3240>
+  when_ready: <function WhenReady.when_ready at 0x7fe51c7a3380>
+  pre_fork: <function Prefork.pre_fork at 0x7fe51c7a34c0>
+  post_fork: <function Postfork.post_fork at 0x7fe51c7a3600>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7fe51c7a3740>
+  worker_int: <function WorkerInt.worker_int at 0x7fe51c7a3880>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7fe51c7a39c0>
+  pre_exec: <function PreExec.pre_exec at 0x7fe51c7a3b00>
+  pre_request: <function PreRequest.pre_request at 0x7fe51c7a3c40>
+  post_request: <function PostRequest.post_request at 0x7fe51c7a3ce0>
+  child_exit: <function ChildExit.child_exit at 0x7fe51c7a3e20>
+  worker_exit: <function WorkerExit.worker_exit at 0x7fe51c7a3f60>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7fe51c7b40e0>
+  on_exit: <function OnExit.on_exit at 0x7fe51c7b4220>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2023-11-15 21:34:21 +0000] [106289] [INFO] Booting worker with pid: 106289
+[2023-11-15 21:34:21 +0000] [106296] [INFO] Booting worker with pid: 106296
+[2023-11-15 21:34:21 +0000] [106290] [INFO] Booting worker with pid: 106290
+[2023-11-15 21:34:21 +0000] [105964] [INFO] Handling signal: term
+[2023-11-15 21:34:21 +0000] [106297] [INFO] Booting worker with pid: 106297
+[2023-11-15 21:34:21 +0000] [106299] [INFO] Booting worker with pid: 106299
+[2023-11-15 21:34:23 +0000] [104869] [INFO] Handling signal: term
+[2023-11-15 21:34:25 +0000] [104878] [INFO] Parent changed, shutting down: <Worker 104878>
+[2023-11-15 21:34:25 +0000] [104878] [INFO] Worker exiting (pid: 104878)
+[2023-11-15 21:34:25 +0000] [104877] [INFO] Parent changed, shutting down: <Worker 104877>
+[2023-11-15 21:34:25 +0000] [104877] [INFO] Worker exiting (pid: 104877)
+[2023-11-15 21:34:26 +0000] [104876] [INFO] Parent changed, shutting down: <Worker 104876>
+[2023-11-15 21:34:26 +0000] [104876] [INFO] Worker exiting (pid: 104876)
+[2023-11-15 21:34:26 +0000] [106299] [INFO] Worker exiting (pid: 106299)
+[2023-11-15 21:34:26 +0000] [106281] [INFO] Worker exiting (pid: 106281)
+[2023-11-15 21:34:26 +0000] [106285] [INFO] Worker exiting (pid: 106285)
+[2023-11-15 21:34:26 +0000] [106276] [INFO] Worker exiting (pid: 106276)
+[2023-11-15 21:34:26 +0000] [106297] [INFO] Worker exiting (pid: 106297)
+[2023-11-15 21:34:26 +0000] [106296] [INFO] Worker exiting (pid: 106296)
+[2023-11-15 21:34:26 +0000] [106289] [INFO] Worker exiting (pid: 106289)
+[2023-11-15 21:34:26 +0000] [106290] [INFO] Worker exiting (pid: 106290)
+[2023-11-15 21:34:26 +0000] [104874] [INFO] Parent changed, shutting down: <Worker 104874>
+[2023-11-15 21:34:26 +0000] [104874] [INFO] Worker exiting (pid: 104874)
+[2023-11-15 21:34:27 +0000] [104875] [INFO] Parent changed, shutting down: <Worker 104875>
+[2023-11-15 21:34:27 +0000] [104875] [INFO] Worker exiting (pid: 104875)
+[2023-11-15 21:34:30 +0000] [105964] [INFO] Shutting down: Master
+[2023-11-15 21:35:30 +0000] [882] [DEBUG] Current configuration:
+  config: ./gunicorn.conf.py
+  wsgi_app: None
+  bind: ['unix:/tmp/gunicorn-apiBomberosUubr.sock']
+  backlog: 2048
+  workers: 5
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/nur/Backend-BomberosUUBR
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 1000
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/nur/Backend-BomberosUUBR/logs/gunicorn.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: apiBomberosUubr
+  default_proc_name: backend.wsgi:application
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f9e6b37f100>
+  on_reload: <function OnReload.on_reload at 0x7f9e6b37f240>
+  when_ready: <function WhenReady.when_ready at 0x7f9e6b37f380>
+  pre_fork: <function Prefork.pre_fork at 0x7f9e6b37f4c0>
+  post_fork: <function Postfork.post_fork at 0x7f9e6b37f600>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f9e6b37f740>
+  worker_int: <function WorkerInt.worker_int at 0x7f9e6b37f880>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f9e6b37f9c0>
+  pre_exec: <function PreExec.pre_exec at 0x7f9e6b37fb00>
+  pre_request: <function PreRequest.pre_request at 0x7f9e6b37fc40>
+  post_request: <function PostRequest.post_request at 0x7f9e6b37fce0>
+  child_exit: <function ChildExit.child_exit at 0x7f9e6b37fe20>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f9e6b37ff60>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f9e6b3900e0>
+  on_exit: <function OnExit.on_exit at 0x7f9e6b390220>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2023-11-15 21:35:30 +0000] [882] [INFO] Starting gunicorn 20.1.0
+[2023-11-15 21:35:30 +0000] [882] [DEBUG] Arbiter booted
+[2023-11-15 21:35:30 +0000] [882] [INFO] Listening at: unix:/tmp/gunicorn-apiBomberosUubr.sock (882)
+[2023-11-15 21:35:30 +0000] [882] [INFO] Using worker: sync
+[2023-11-15 21:35:30 +0000] [899] [INFO] Booting worker with pid: 899
+[2023-11-15 21:35:31 +0000] [900] [INFO] Booting worker with pid: 900
+[2023-11-15 21:35:31 +0000] [901] [INFO] Booting worker with pid: 901
+[2023-11-15 21:35:31 +0000] [908] [INFO] Booting worker with pid: 908
+[2023-11-15 21:35:31 +0000] [882] [DEBUG] 5 workers
+[2023-11-15 21:35:31 +0000] [909] [INFO] Booting worker with pid: 909
+[2023-11-15 21:51:45 +0000] [1249] [DEBUG] Current configuration:
+  config: ./gunicorn.conf.py
+  wsgi_app: None
+  bind: ['unix:/tmp/gunicorn-apiBomberosUubr.sock']
+  backlog: 2048
+  workers: 5
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/nur/Backend-BomberosUUBR
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 1000
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/nur/Backend-BomberosUUBR/logs/gunicorn.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: apiBomberosUubr
+  default_proc_name: backend.wsgi:application
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f3f5ef47100>
+  on_reload: <function OnReload.on_reload at 0x7f3f5ef47240>
+  when_ready: <function WhenReady.when_ready at 0x7f3f5ef47380>
+  pre_fork: <function Prefork.pre_fork at 0x7f3f5ef474c0>
+  post_fork: <function Postfork.post_fork at 0x7f3f5ef47600>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f3f5ef47740>
+  worker_int: <function WorkerInt.worker_int at 0x7f3f5ef47880>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f3f5ef479c0>
+  pre_exec: <function PreExec.pre_exec at 0x7f3f5ef47b00>
+  pre_request: <function PreRequest.pre_request at 0x7f3f5ef47c40>
+  post_request: <function PostRequest.post_request at 0x7f3f5ef47ce0>
+  child_exit: <function ChildExit.child_exit at 0x7f3f5ef47e20>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f3f5ef47f60>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f3f5ef580e0>
+  on_exit: <function OnExit.on_exit at 0x7f3f5ef58220>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2023-11-15 21:51:45 +0000] [1249] [INFO] Starting gunicorn 20.1.0
+[2023-11-15 21:51:45 +0000] [1249] [DEBUG] Arbiter booted
+[2023-11-15 21:51:45 +0000] [1249] [INFO] Listening at: unix:/tmp/gunicorn-apiBomberosUubr.sock (1249)
+[2023-11-15 21:51:45 +0000] [1249] [INFO] Using worker: sync
+[2023-11-15 21:51:45 +0000] [1254] [INFO] Booting worker with pid: 1254
+[2023-11-15 21:51:45 +0000] [1255] [INFO] Booting worker with pid: 1255
+[2023-11-15 21:51:45 +0000] [1256] [INFO] Booting worker with pid: 1256
+[2023-11-15 21:51:45 +0000] [1257] [INFO] Booting worker with pid: 1257
+[2023-11-15 21:51:45 +0000] [1249] [DEBUG] 5 workers
+[2023-11-15 21:51:45 +0000] [1258] [INFO] Booting worker with pid: 1258
+[2023-11-15 21:51:58 +0000] [1249] [INFO] Handling signal: int
+[2023-11-15 21:51:58 +0000] [1254] [INFO] Worker exiting (pid: 1254)
+[2023-11-15 21:51:58 +0000] [1256] [INFO] Worker exiting (pid: 1256)
+[2023-11-15 21:51:58 +0000] [1255] [INFO] Worker exiting (pid: 1255)
+[2023-11-15 21:51:58 +0000] [1257] [INFO] Worker exiting (pid: 1257)
+[2023-11-15 21:51:58 +0000] [1258] [INFO] Worker exiting (pid: 1258)
+[2023-11-15 21:51:58 +0000] [1249] [WARNING] Worker with pid 1258 was terminated due to signal 2
+[2023-11-15 21:51:58 +0000] [1249] [WARNING] Worker with pid 1254 was terminated due to signal 2
+[2023-11-15 21:51:58 +0000] [1249] [WARNING] Worker with pid 1255 was terminated due to signal 2
+[2023-11-15 21:51:58 +0000] [1249] [WARNING] Worker with pid 1256 was terminated due to signal 2
+[2023-11-15 21:51:58 +0000] [1249] [WARNING] Worker with pid 1257 was terminated due to signal 2
+[2023-11-15 21:51:58 +0000] [1249] [INFO] Shutting down: Master
+[2023-11-16 12:58:10 +0000] [8750] [DEBUG] Current configuration:
+  config: ./gunicorn.conf.py
+  wsgi_app: None
+  bind: ['unix:/tmp/gunicorn-apiBomberosUubr.sock']
+  backlog: 2048
+  workers: 5
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/nur/Backend-BomberosUUBR
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 1000
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/nur/Backend-BomberosUUBR/logs/gunicorn.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: apiBomberosUubr
+  default_proc_name: backend.wsgi:application
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7ff9664bb100>
+  on_reload: <function OnReload.on_reload at 0x7ff9664bb240>
+  when_ready: <function WhenReady.when_ready at 0x7ff9664bb380>
+  pre_fork: <function Prefork.pre_fork at 0x7ff9664bb4c0>
+  post_fork: <function Postfork.post_fork at 0x7ff9664bb600>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7ff9664bb740>
+  worker_int: <function WorkerInt.worker_int at 0x7ff9664bb880>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7ff9664bb9c0>
+  pre_exec: <function PreExec.pre_exec at 0x7ff9664bbb00>
+  pre_request: <function PreRequest.pre_request at 0x7ff9664bbc40>
+  post_request: <function PostRequest.post_request at 0x7ff9664bbce0>
+  child_exit: <function ChildExit.child_exit at 0x7ff9664bbe20>
+  worker_exit: <function WorkerExit.worker_exit at 0x7ff9664bbf60>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7ff9664cc0e0>
+  on_exit: <function OnExit.on_exit at 0x7ff9664cc220>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2023-11-16 12:58:10 +0000] [8750] [INFO] Starting gunicorn 20.1.0
+[2023-11-16 12:58:10 +0000] [8750] [DEBUG] Arbiter booted
+[2023-11-16 12:58:10 +0000] [8750] [INFO] Listening at: unix:/tmp/gunicorn-apiBomberosUubr.sock (8750)
+[2023-11-16 12:58:10 +0000] [8750] [INFO] Using worker: sync
+[2023-11-16 12:58:10 +0000] [8755] [INFO] Booting worker with pid: 8755
+[2023-11-16 12:58:10 +0000] [8756] [INFO] Booting worker with pid: 8756
+[2023-11-16 12:58:10 +0000] [8757] [INFO] Booting worker with pid: 8757
+[2023-11-16 12:58:10 +0000] [8758] [INFO] Booting worker with pid: 8758
+[2023-11-16 12:58:10 +0000] [8759] [INFO] Booting worker with pid: 8759
+[2023-11-16 12:58:10 +0000] [8750] [DEBUG] 5 workers
+[2023-11-16 12:59:01 +0000] [8759] [DEBUG] GET /
+[2023-11-16 12:59:49 +0000] [8750] [INFO] Handling signal: int
+[2023-11-16 12:59:49 +0000] [8756] [INFO] Worker exiting (pid: 8756)
+[2023-11-16 12:59:49 +0000] [8758] [INFO] Worker exiting (pid: 8758)
+[2023-11-16 12:59:49 +0000] [8757] [INFO] Worker exiting (pid: 8757)
+[2023-11-16 12:59:49 +0000] [8759] [INFO] Worker exiting (pid: 8759)
+[2023-11-16 12:59:49 +0000] [8755] [INFO] Worker exiting (pid: 8755)
+[2023-11-16 12:59:50 +0000] [8750] [WARNING] Worker with pid 8759 was terminated due to signal 2
+[2023-11-16 12:59:50 +0000] [8750] [WARNING] Worker with pid 8756 was terminated due to signal 2
+[2023-11-16 12:59:50 +0000] [8750] [WARNING] Worker with pid 8758 was terminated due to signal 2
+[2023-11-16 12:59:50 +0000] [8750] [WARNING] Worker with pid 8755 was terminated due to signal 2
+[2023-11-16 12:59:50 +0000] [8750] [WARNING] Worker with pid 8757 was terminated due to signal 2
+[2023-11-16 12:59:50 +0000] [8750] [INFO] Shutting down: Master
+[2023-11-16 13:01:06 +0000] [882] [INFO] Handling signal: term
+[2023-11-16 13:01:08 +0000] [900] [INFO] Parent changed, shutting down: <Worker 900>
+[2023-11-16 13:01:08 +0000] [900] [INFO] Worker exiting (pid: 900)
+[2023-11-16 13:01:08 +0000] [899] [INFO] Parent changed, shutting down: <Worker 899>
+[2023-11-16 13:01:08 +0000] [899] [INFO] Worker exiting (pid: 899)
+[2023-11-16 13:01:09 +0000] [901] [INFO] Parent changed, shutting down: <Worker 901>
+[2023-11-16 13:01:09 +0000] [901] [INFO] Worker exiting (pid: 901)
+[2023-11-16 13:01:09 +0000] [908] [INFO] Parent changed, shutting down: <Worker 908>
+[2023-11-16 13:01:09 +0000] [908] [INFO] Worker exiting (pid: 908)
+[2023-11-16 13:01:09 +0000] [909] [INFO] Parent changed, shutting down: <Worker 909>
+[2023-11-16 13:01:09 +0000] [909] [INFO] Worker exiting (pid: 909)
+[2023-11-16 13:02:18 +0000] [8861] [DEBUG] Current configuration:
+  config: ./gunicorn.conf.py
+  wsgi_app: None
+  bind: ['unix:/tmp/gunicorn-apiBomberosUubr.sock']
+  backlog: 2048
+  workers: 5
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/nur/Backend-BomberosUUBR
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 1000
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/nur/Backend-BomberosUUBR/logs/gunicorn.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: apiBomberosUubr
+  default_proc_name: backend.wsgi:application
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f9a75bdb100>
+  on_reload: <function OnReload.on_reload at 0x7f9a75bdb240>
+  when_ready: <function WhenReady.when_ready at 0x7f9a75bdb380>
+  pre_fork: <function Prefork.pre_fork at 0x7f9a75bdb4c0>
+  post_fork: <function Postfork.post_fork at 0x7f9a75bdb600>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f9a75bdb740>
+  worker_int: <function WorkerInt.worker_int at 0x7f9a75bdb880>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f9a75bdb9c0>
+  pre_exec: <function PreExec.pre_exec at 0x7f9a75bdbb00>
+  pre_request: <function PreRequest.pre_request at 0x7f9a75bdbc40>
+  post_request: <function PostRequest.post_request at 0x7f9a75bdbce0>
+  child_exit: <function ChildExit.child_exit at 0x7f9a75bdbe20>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f9a75bdbf60>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f9a75bec0e0>
+  on_exit: <function OnExit.on_exit at 0x7f9a75bec220>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2023-11-16 13:02:18 +0000] [8861] [INFO] Starting gunicorn 20.1.0
+[2023-11-16 13:02:18 +0000] [8861] [DEBUG] Arbiter booted
+[2023-11-16 13:02:18 +0000] [8861] [INFO] Listening at: unix:/tmp/gunicorn-apiBomberosUubr.sock (8861)
+[2023-11-16 13:02:18 +0000] [8861] [INFO] Using worker: sync
+[2023-11-16 13:02:18 +0000] [8866] [INFO] Booting worker with pid: 8866
+[2023-11-16 13:02:18 +0000] [8867] [INFO] Booting worker with pid: 8867
+[2023-11-16 13:02:18 +0000] [8868] [INFO] Booting worker with pid: 8868
+[2023-11-16 13:02:18 +0000] [8869] [INFO] Booting worker with pid: 8869
+[2023-11-16 13:02:18 +0000] [8870] [INFO] Booting worker with pid: 8870
+[2023-11-16 13:02:18 +0000] [8861] [DEBUG] 5 workers
+[2023-11-16 13:05:19 +0000] [8867] [DEBUG] GET /
+[2023-11-16 13:05:22 +0000] [8870] [DEBUG] GET /
+[2023-11-16 13:05:27 +0000] [8867] [DEBUG] GET /
+[2023-11-16 13:05:28 +0000] [8868] [DEBUG] GET /usuario/
+[2023-11-16 13:12:13 +0000] [8870] [DEBUG] GET /usuario/
+[2023-11-16 13:12:14 +0000] [8867] [DEBUG] GET /favicon.ico
+[2023-11-16 13:13:03 +0000] [8867] [DEBUG] OPTIONS /usuario/
+[2023-11-16 13:13:03 +0000] [8869] [DEBUG] GET /usuario/
+[2023-11-16 13:13:10 +0000] [8867] [DEBUG] OPTIONS /login/
+[2023-11-16 13:13:10 +0000] [8868] [DEBUG] POST /login/
+[2023-11-16 13:13:11 +0000] [8867] [DEBUG] GET /usuario/
+[2023-11-16 13:13:22 +0000] [8866] [DEBUG] OPTIONS /usuario/2
+[2023-11-16 13:13:22 +0000] [8869] [DEBUG] GET /usuario/2
+[2023-11-16 13:13:22 +0000] [8866] [DEBUG] OPTIONS /usuario/2/
+[2023-11-16 13:13:22 +0000] [8870] [DEBUG] GET /usuario/2/
+[2023-11-16 13:13:26 +0000] [8866] [DEBUG] PUT /usuario/2/
+[2023-11-16 13:13:27 +0000] [8868] [DEBUG] GET /usuario/
+[2023-11-16 13:13:29 +0000] [8867] [DEBUG] PATCH /usuario/2/
+[2023-11-16 13:14:29 +0000] [8868] [DEBUG] GET /usuario/
+[2023-11-16 13:18:29 +0000] [8866] [DEBUG] OPTIONS /login/
+[2023-11-16 13:18:29 +0000] [8869] [DEBUG] POST /login/
+[2023-11-16 13:18:30 +0000] [8867] [DEBUG] OPTIONS /usuario/
+[2023-11-16 13:18:30 +0000] [8868] [DEBUG] GET /usuario/
+[2023-11-16 13:18:32 +0000] [8867] [DEBUG] OPTIONS /usuario/2
+[2023-11-16 13:18:33 +0000] [8870] [DEBUG] GET /usuario/2
+[2023-11-16 13:18:33 +0000] [8869] [DEBUG] OPTIONS /usuario/2/
+[2023-11-16 13:18:33 +0000] [8866] [DEBUG] GET /usuario/2/
+[2023-11-16 13:18:39 +0000] [8869] [DEBUG] GET /usuario/
+[2023-11-16 13:18:39 +0000] [8866] [DEBUG] GET /usuario/2/
+[2023-11-16 13:18:41 +0000] [8869] [DEBUG] PUT /usuario/2/
+[2023-11-16 13:18:42 +0000] [8868] [DEBUG] PATCH /usuario/2/
+[2023-11-16 13:18:43 +0000] [8869] [DEBUG] GET /usuario/2/
+[2023-11-16 13:18:43 +0000] [8868] [DEBUG] GET /usuario/
+[2023-11-16 13:18:46 +0000] [8869] [DEBUG] PUT /usuario/2/
+[2023-11-16 13:18:47 +0000] [8868] [DEBUG] PATCH /usuario/2/
+[2023-11-16 13:18:47 +0000] [8869] [DEBUG] GET /usuario/
+[2023-11-16 13:18:49 +0000] [8868] [DEBUG] GET /usuario/
+[2023-11-16 13:19:57 +0000] [8866] [DEBUG] GET /usuario/
+[2023-11-16 13:20:01 +0000] [8870] [DEBUG] OPTIONS /type-product/
+[2023-11-16 13:20:01 +0000] [8867] [DEBUG] GET /type-product/
+[2023-11-16 13:20:02 +0000] [8870] [DEBUG] GET /usuario/2/
+[2023-11-16 13:20:05 +0000] [8869] [DEBUG] GET /usuario/2/
+[2023-11-16 13:20:10 +0000] [8868] [DEBUG] GET /usuario/2/
+[2023-11-16 13:20:11 +0000] [8869] [DEBUG] GET /usuario/
+[2023-11-16 13:20:16 +0000] [8868] [DEBUG] GET /usuario/2/
+[2023-11-16 13:20:17 +0000] [8866] [DEBUG] GET /usuario/
+[2023-11-16 13:20:18 +0000] [8867] [DEBUG] GET /usuario/
+[2023-11-16 13:20:54 +0000] [8867] [DEBUG] POST /usuario/
+[2023-11-16 13:20:56 +0000] [8870] [DEBUG] GET /usuario/
+[2023-11-16 13:22:48 +0000] [8869] [DEBUG] OPTIONS /usuario/3
+[2023-11-16 13:22:48 +0000] [8870] [DEBUG] GET /usuario/3
+[2023-11-16 13:22:48 +0000] [8866] [DEBUG] OPTIONS /usuario/3/
+[2023-11-16 13:22:48 +0000] [8867] [DEBUG] GET /usuario/3/
+[2023-11-16 13:23:06 +0000] [8866] [DEBUG] GET /usuario/
+[2023-11-16 13:23:08 +0000] [8867] [DEBUG] GET /usuario/2/
+[2023-11-16 13:23:26 +0000] [8866] [DEBUG] POST /login/
+[2023-11-16 13:23:27 +0000] [8867] [DEBUG] GET /usuario/
+[2023-11-16 13:23:29 +0000] [8866] [DEBUG] GET /usuario/3/
+[2023-11-16 13:23:33 +0000] [8867] [DEBUG] GET /usuario/3/
+[2023-11-16 13:23:45 +0000] [8868] [DEBUG] PUT /usuario/3/
+[2023-11-16 13:23:45 +0000] [8866] [DEBUG] PATCH /usuario/3/
+[2023-11-16 13:23:46 +0000] [8868] [DEBUG] GET /usuario/3/
+[2023-11-16 13:23:46 +0000] [8866] [DEBUG] GET /usuario/
+[2023-11-16 13:24:33 +0000] [8866] [DEBUG] GET /usuario/
+[2023-11-16 13:24:33 +0000] [8868] [DEBUG] GET /usuario/3/
+[2023-11-16 13:24:55 +0000] [8870] [DEBUG] GET /usuario/3/
+[2023-11-16 13:25:03 +0000] [8869] [DEBUG] POST /login/
+[2023-11-16 13:25:03 +0000] [8868] [DEBUG] GET /usuario/
+[2023-11-16 13:25:09 +0000] [8869] [DEBUG] GET /usuario/
+[2023-11-16 13:27:47 +0000] [8870] [DEBUG] GET /
+[2023-11-16 13:33:18 +0000] [8869] [DEBUG] GET /
+[2023-11-16 13:33:18 +0000] [8867] [DEBUG] GET /
+[2023-11-16 13:33:19 +0000] [8869] [DEBUG] GET /
+[2023-11-16 13:33:19 +0000] [8868] [DEBUG] GET /usuario/
+[2023-11-16 13:33:19 +0000] [8869] [DEBUG] GET /
+[2023-11-16 13:33:20 +0000] [8866] [DEBUG] GET /usuario/
+[2023-11-16 13:33:21 +0000] [8869] [DEBUG] GET /usuario/
+[2023-11-16 13:58:58 +0000] [8869] [DEBUG] GET /
+[2023-11-16 14:35:45 +0000] [8866] [DEBUG] GET /
+[2023-11-16 14:59:53 +0000] [8869] [DEBUG] GET /
+[2023-11-16 15:00:14 +0000] [8868] [DEBUG] GET /robots.txt
+[2023-11-16 15:00:16 +0000] [8869] [DEBUG] GET /sitemap.xml
+[2023-11-16 15:00:17 +0000] [8868] [DEBUG] GET /.well-known/security.txt
+[2023-11-16 15:00:19 +0000] [8866] [DEBUG] GET /favicon.ico
+[2023-11-16 15:05:29 +0000] [8870] [DEBUG] GET /
+[2023-11-16 15:09:11 +0000] [8866] [DEBUG] GET /usuario/
+[2023-11-16 15:09:33 +0000] [8869] [DEBUG] POST /login/
+[2023-11-16 15:09:33 +0000] [8868] [DEBUG] GET /usuario/
+[2023-11-16 15:09:54 +0000] [8869] [DEBUG] POST /login/
+[2023-11-16 15:09:55 +0000] [8868] [DEBUG] GET /usuario/
+[2023-11-16 15:10:03 +0000] [8869] [DEBUG] GET /usuario/3/
+[2023-11-16 15:10:03 +0000] [8870] [DEBUG] GET /usuario/
+[2023-11-16 15:11:29 +0000] [8866] [DEBUG] GET /GdoB
+[2023-11-16 15:11:29 +0000] [8867] [DEBUG] GET /IvJT
+[2023-11-16 15:11:32 +0000] [8866] [DEBUG] PUT /usuario/3/
+[2023-11-16 15:11:32 +0000] [8867] [DEBUG] PATCH /usuario/3/
+[2023-11-16 15:11:33 +0000] [8866] [DEBUG] GET /usuario/
+[2023-11-16 15:13:33 +0000] [8868] [DEBUG] POST /login/
+[2023-11-16 15:13:34 +0000] [8869] [DEBUG] GET /usuario/
+[2023-11-16 15:14:11 +0000] [8870] [DEBUG] GET /usuario/
+[2023-11-16 15:14:14 +0000] [8869] [DEBUG] GET /usuario/3/
+[2023-11-16 15:14:17 +0000] [8870] [DEBUG] GET /usuario/
+[2023-11-16 15:14:18 +0000] [8869] [DEBUG] GET /usuario/3/
+[2023-11-16 15:14:20 +0000] [8867] [DEBUG] GET /usuario/
+[2023-11-16 15:14:27 +0000] [8866] [DEBUG] GET /usuario/
+[2023-11-16 15:14:31 +0000] [8867] [DEBUG] GET /usuario/
+[2023-11-16 15:14:57 +0000] [8868] [DEBUG] GET /usuario/3/
+[2023-11-16 15:15:00 +0000] [8869] [DEBUG] PUT /usuario/3/
+[2023-11-16 15:15:00 +0000] [8868] [DEBUG] PATCH /usuario/3/
+[2023-11-16 15:15:01 +0000] [8869] [DEBUG] GET /usuario/
+[2023-11-16 15:15:02 +0000] [8868] [DEBUG] GET /usuario/
+[2023-11-16 15:15:03 +0000] [8869] [DEBUG] GET /usuario/
+[2023-11-16 15:15:03 +0000] [8869] [DEBUG] Ignoring EPIPE
+[2023-11-16 15:15:04 +0000] [8868] [DEBUG] GET /usuario/
+[2023-11-16 15:15:04 +0000] [8869] [DEBUG] GET /usuario/
+[2023-11-16 15:15:14 +0000] [8868] [DEBUG] GET /usuario/
+[2023-11-16 15:15:32 +0000] [8866] [DEBUG] POST /login/
+[2023-11-16 15:15:33 +0000] [8868] [DEBUG] GET /usuario/
+[2023-11-16 15:15:42 +0000] [8866] [DEBUG] POST /login/
+[2023-11-16 15:15:43 +0000] [8870] [DEBUG] GET /usuario/
+[2023-11-16 15:15:51 +0000] [8866] [DEBUG] GET /usuario/3/
+[2023-11-16 15:16:03 +0000] [8869] [DEBUG] POST /login/
+[2023-11-16 15:16:04 +0000] [8868] [DEBUG] GET /usuario/
+[2023-11-16 15:16:06 +0000] [8869] [DEBUG] GET /usuario/3/
+[2023-11-16 15:16:08 +0000] [8868] [DEBUG] PUT /usuario/3/
+[2023-11-16 15:16:08 +0000] [8866] [DEBUG] PATCH /usuario/3/
+[2023-11-16 15:16:09 +0000] [8868] [DEBUG] GET /usuario/
+[2023-11-16 15:16:21 +0000] [8866] [DEBUG] POST /login/
+[2023-11-16 15:16:22 +0000] [8869] [DEBUG] GET /usuario/
+[2023-11-16 15:18:04 +0000] [8870] [DEBUG] GET /usuario/
+[2023-11-16 15:18:12 +0000] [8867] [DEBUG] POST /login/
+[2023-11-16 15:18:13 +0000] [8868] [DEBUG] GET /usuario/
+[2023-11-16 15:18:49 +0000] [8868] [DEBUG] GET /
+[2023-11-16 15:19:09 +0000] [8869] [DEBUG] GET /favicon.ico
+[2023-11-16 15:19:12 +0000] [8866] [DEBUG] GET /robots.txt
+[2023-11-16 15:19:13 +0000] [8869] [DEBUG] GET /sitemap.xml
+[2023-11-16 15:20:05 +0000] [8869] [DEBUG] OPTIONS /login/
+[2023-11-16 15:20:05 +0000] [8868] [DEBUG] POST /login/
+[2023-11-16 15:20:30 +0000] [8867] [DEBUG] POST /login/
+[2023-11-16 15:20:48 +0000] [8868] [DEBUG] POST /login/
+[2023-11-16 15:20:49 +0000] [8867] [DEBUG] OPTIONS /usuario/
+[2023-11-16 15:20:49 +0000] [8870] [DEBUG] GET /usuario/
+[2023-11-16 15:24:39 +0000] [8869] [DEBUG] OPTIONS /usuario/
+[2023-11-16 15:24:39 +0000] [8868] [DEBUG] GET /usuario/
+[2023-11-16 15:24:42 +0000] [8869] [DEBUG] GET /usuario/
+[2023-11-16 15:24:44 +0000] [8866] [DEBUG] GET /usuario/
+[2023-11-16 15:24:44 +0000] [8869] [DEBUG] GET /usuario/
+[2023-11-16 15:24:45 +0000] [8866] [DEBUG] GET /usuario/
+[2023-11-16 15:24:46 +0000] [8869] [DEBUG] GET /usuario/
+[2023-11-16 15:24:47 +0000] [8866] [DEBUG] GET /usuario/
+[2023-11-16 15:24:49 +0000] [8869] [DEBUG] GET /usuario/
+[2023-11-16 15:25:08 +0000] [8870] [DEBUG] OPTIONS /login/
+[2023-11-16 15:25:08 +0000] [8866] [DEBUG] POST /login/
+[2023-11-16 15:25:09 +0000] [8870] [DEBUG] GET /usuario/
+[2023-11-16 15:25:18 +0000] [8866] [DEBUG] GET /usuario/
+[2023-11-16 15:25:20 +0000] [8868] [DEBUG] GET /usuario/
+[2023-11-16 15:25:25 +0000] [8867] [DEBUG] POST /login/
+[2023-11-16 15:25:26 +0000] [8870] [DEBUG] GET /usuario/
+[2023-11-16 15:25:28 +0000] [8867] [DEBUG] GET /usuario/
+[2023-11-16 15:25:30 +0000] [8870] [DEBUG] GET /usuario/
+[2023-11-16 15:25:30 +0000] [8867] [DEBUG] GET /usuario/
+[2023-11-16 15:25:32 +0000] [8870] [DEBUG] GET /usuario/
+[2023-11-16 15:25:32 +0000] [8867] [DEBUG] GET /usuario/
+[2023-11-16 15:25:33 +0000] [8870] [DEBUG] GET /usuario/
+[2023-11-16 15:25:34 +0000] [8866] [DEBUG] GET /usuario/
+[2023-11-16 15:25:35 +0000] [8870] [DEBUG] GET /usuario/
+[2023-11-16 15:25:51 +0000] [8869] [DEBUG] POST /login/
+[2023-11-16 15:25:52 +0000] [8868] [DEBUG] GET /usuario/
+[2023-11-16 15:25:54 +0000] [8869] [DEBUG] GET /usuario/
+[2023-11-16 15:25:57 +0000] [8868] [DEBUG] GET /usuario/
+[2023-11-16 15:25:58 +0000] [8869] [DEBUG] GET /usuario/
+[2023-11-16 15:25:59 +0000] [8868] [DEBUG] GET /usuario/
+[2023-11-16 15:26:00 +0000] [8869] [DEBUG] GET /usuario/
+[2023-11-16 15:26:06 +0000] [8868] [DEBUG] POST /login/
+[2023-11-16 15:26:07 +0000] [8870] [DEBUG] GET /usuario/
+[2023-11-16 15:26:09 +0000] [8868] [DEBUG] GET /usuario/
+[2023-11-16 15:26:13 +0000] [8870] [DEBUG] GET /usuario/
+[2023-11-16 15:26:15 +0000] [8868] [DEBUG] GET /usuario/
+[2023-11-16 15:26:16 +0000] [8870] [DEBUG] GET /usuario/
+[2023-11-16 15:26:17 +0000] [8869] [DEBUG] GET /usuario/
+[2023-11-16 15:26:18 +0000] [8870] [DEBUG] GET /usuario/
+[2023-11-16 15:28:37 +0000] [8866] [DEBUG] GET /
+[2023-11-16 15:30:18 +0000] [8869] [DEBUG] GET /usuario/
+[2023-11-16 15:30:25 +0000] [8870] [DEBUG] GET /usuario/
+[2023-11-16 15:32:05 +0000] [8867] [DEBUG] GET /usuario/
+[2023-11-16 15:32:08 +0000] [8869] [DEBUG] GET /usuario/
+[2023-11-16 15:32:10 +0000] [8866] [DEBUG] GET /usuario/
+[2023-11-16 15:32:12 +0000] [8870] [DEBUG] GET /usuario/
+[2023-11-16 15:32:12 +0000] [8866] [DEBUG] GET /usuario/
+[2023-11-16 15:32:14 +0000] [8870] [DEBUG] GET /usuario/
+[2023-11-16 15:32:19 +0000] [8866] [DEBUG] GET /usuario/
+[2023-11-16 15:32:36 +0000] [8868] [DEBUG] POST /login/
+[2023-11-16 15:32:37 +0000] [8867] [DEBUG] GET /usuario/
+[2023-11-16 15:32:40 +0000] [8868] [DEBUG] GET /usuario/
+[2023-11-16 15:36:08 +0000] [8866] [DEBUG] GET /usuario/
+[2023-11-16 15:36:12 +0000] [8867] [DEBUG] OPTIONS /usuario/2
+[2023-11-16 15:36:13 +0000] [8870] [DEBUG] OPTIONS /usuario/2/
+[2023-11-16 15:36:13 +0000] [8869] [DEBUG] GET /usuario/2/
+[2023-11-16 15:36:15 +0000] [8870] [DEBUG] GET /usuario/
+[2023-11-16 15:36:18 +0000] [8869] [DEBUG] GET /usuario/
+[2023-11-16 15:36:19 +0000] [8870] [DEBUG] OPTIONS /type-product/
+[2023-11-16 15:36:19 +0000] [8868] [DEBUG] GET /type-product/
+[2023-11-16 15:36:21 +0000] [8870] [DEBUG] GET /usuario/
+[2023-11-16 15:36:25 +0000] [8868] [DEBUG] GET /usuario/
+[2023-11-16 15:36:28 +0000] [8866] [DEBUG] GET /type-product/
+[2023-11-16 15:36:29 +0000] [8867] [DEBUG] GET /usuario/2/
+[2023-11-16 15:36:31 +0000] [8866] [DEBUG] GET /usuario/
+[2023-11-16 15:36:48 +0000] [8867] [DEBUG] GET /usuario/
+[2023-11-16 15:37:40 +0000] [8870] [DEBUG] GET /usuario/
+[2023-11-16 15:37:43 +0000] [8869] [DEBUG] GET /usuario/
+[2023-11-16 15:37:47 +0000] [8868] [DEBUG] GET /usuario/
+[2023-11-16 15:37:51 +0000] [8866] [DEBUG] GET /usuario/
+[2023-11-16 15:37:54 +0000] [8867] [DEBUG] GET /usuario/
+[2023-11-16 15:37:55 +0000] [8866] [DEBUG] OPTIONS /usuario/2
+[2023-11-16 15:37:55 +0000] [8870] [DEBUG] GET /usuario/2
+[2023-11-16 15:37:55 +0000] [8868] [DEBUG] OPTIONS /usuario/2/
+[2023-11-16 15:37:55 +0000] [8869] [DEBUG] GET /usuario/2/
+[2023-11-16 15:37:55 +0000] [8868] [DEBUG] GET /usuario/
+[2023-11-16 15:38:02 +0000] [8869] [DEBUG] GET /usuario/
+[2023-11-16 15:38:05 +0000] [8868] [DEBUG] GET /usuario/
+[2023-11-16 15:38:05 +0000] [8869] [DEBUG] OPTIONS /usuario/3
+[2023-11-16 15:38:05 +0000] [8866] [DEBUG] GET /usuario/
+[2023-11-16 15:38:05 +0000] [8869] [DEBUG] GET /usuario/3
+[2023-11-16 15:38:06 +0000] [8868] [DEBUG] OPTIONS /usuario/3/
+[2023-11-16 15:38:06 +0000] [8867] [DEBUG] GET /usuario/3/
+[2023-11-16 15:38:20 +0000] [8868] [DEBUG] OPTIONS /type-product/
+[2023-11-16 15:38:20 +0000] [8869] [DEBUG] GET /type-product/
+[2023-11-16 15:38:23 +0000] [8868] [DEBUG] GET /usuario/
+[2023-11-16 15:38:24 +0000] [8867] [DEBUG] GET /type-product/
+[2023-11-16 15:38:35 +0000] [8868] [DEBUG] GET /usuario/3/
+[2023-11-16 15:38:35 +0000] [8866] [DEBUG] OPTIONS /usuario/1
+[2023-11-16 15:38:35 +0000] [8869] [DEBUG] GET /usuario/1
+[2023-11-16 15:38:36 +0000] [8870] [DEBUG] OPTIONS /usuario/1/
+[2023-11-16 15:38:36 +0000] [8867] [DEBUG] GET /usuario/1/
+[2023-11-16 15:38:47 +0000] [8870] [DEBUG] OPTIONS /login/
+[2023-11-16 15:38:47 +0000] [8866] [DEBUG] POST /login/
+[2023-11-16 15:38:49 +0000] [8870] [DEBUG] OPTIONS /usuario/
+[2023-11-16 15:38:49 +0000] [8867] [DEBUG] GET /usuario/
+[2023-11-16 15:38:55 +0000] [8870] [DEBUG] GET /type-product/
+[2023-11-16 15:38:55 +0000] [8869] [DEBUG] OPTIONS /type-product/
+[2023-11-16 15:38:56 +0000] [8868] [DEBUG] GET /type-product/
+[2023-11-16 15:38:57 +0000] [8869] [DEBUG] GET /usuario/
+[2023-11-16 15:39:03 +0000] [8868] [DEBUG] GET /usuario/
+[2023-11-16 15:39:08 +0000] [8869] [DEBUG] GET /usuario/
+[2023-11-16 15:39:17 +0000] [8867] [DEBUG] GET /usuario/
+[2023-11-16 15:39:24 +0000] [8870] [DEBUG] GET /usuario/
+[2023-11-16 15:39:27 +0000] [8869] [DEBUG] GET /type-product/
+[2023-11-16 15:39:29 +0000] [8870] [DEBUG] GET /usuario/3/
+[2023-11-16 15:39:32 +0000] [8869] [DEBUG] GET /type-product/
+[2023-11-16 15:40:58 +0000] [8866] [DEBUG] GET /usuario/
+[2023-11-16 15:41:19 +0000] [8868] [DEBUG] POST /login/
+[2023-11-16 15:41:20 +0000] [8867] [DEBUG] GET /usuario/
+[2023-11-16 16:25:43 +0000] [8867] [DEBUG] GET /
+[2023-11-16 16:46:23 +0000] [8869] [DEBUG] GET /
+[2023-11-16 17:40:51 +0000] [8866] [DEBUG] OPTIONS /login/
+[2023-11-16 17:40:51 +0000] [8868] [DEBUG] POST /login/
+[2023-11-16 17:41:22 +0000] [8867] [DEBUG] POST /login/
+[2023-11-16 17:41:23 +0000] [8868] [DEBUG] OPTIONS /usuario/
+[2023-11-16 17:41:23 +0000] [8870] [DEBUG] GET /usuario/
+[2023-11-16 17:41:34 +0000] [8868] [DEBUG] OPTIONS /usuario/2
+[2023-11-16 17:41:35 +0000] [8866] [DEBUG] GET /usuario/2
+[2023-11-16 17:41:35 +0000] [8867] [DEBUG] GET /usuario/2/
+[2023-11-16 17:41:40 +0000] [8866] [DEBUG] GET /usuario/2/
+[2023-11-16 17:41:58 +0000] [8869] [DEBUG] GET /usuario/2/
+[2023-11-16 17:42:02 +0000] [8866] [DEBUG] OPTIONS /type-product/
+[2023-11-16 17:42:03 +0000] [8870] [DEBUG] GET /type-product/
+[2023-11-16 17:42:11 +0000] [8866] [DEBUG] GET /type-product/
+[2023-11-16 17:42:30 +0000] [8869] [DEBUG] GET /usuario/
+[2023-11-16 17:42:33 +0000] [8866] [DEBUG] GET /usuario/
+[2023-11-16 17:42:39 +0000] [8870] [DEBUG] GET /usuario/
+[2023-11-16 18:05:35 +0000] [8869] [DEBUG] GET /
+[2023-11-16 18:05:38 +0000] [8866] [DEBUG] GET /
+[2023-11-16 18:38:48 +0000] [8870] [DEBUG] GET /
+[2023-11-16 19:03:24 +0000] [8870] [DEBUG] GET /oauth/idp/.well-known/openid-configuration
+[2023-11-16 19:25:16 +0000] [8866] [DEBUG] GET /
+[2023-11-16 19:25:19 +0000] [8867] [DEBUG] GET /
+[2023-11-16 20:36:21 +0000] [8868] [DEBUG] GET /.env
+[2023-11-16 21:37:21 +0000] [8870] [DEBUG] GET /
+[2023-11-16 22:20:04 +0000] [8867] [DEBUG] GET /
+[2023-11-16 22:20:12 +0000] [8869] [DEBUG] GET /robots.txt
+[2023-11-16 22:20:13 +0000] [8868] [DEBUG] GET /sitemap.xml
+[2023-11-16 22:20:13 +0000] [8869] [DEBUG] GET /.well-known/security.txt
+[2023-11-16 22:20:13 +0000] [8868] [DEBUG] GET /favicon.ico
+[2023-11-16 23:21:04 +0000] [8868] [DEBUG] GET /
+[2023-11-16 23:21:08 +0000] [8869] [DEBUG] GET /
+[2023-11-16 23:21:11 +0000] [8866] [DEBUG] GET /favicon.ico
+[2023-11-16 23:29:33 +0000] [8870] [DEBUG] GET /
+[2023-11-16 23:29:34 +0000] [8866] [DEBUG] GET /
+[2023-11-16 23:29:35 +0000] [8870] [DEBUG] GET /favicon.ico
+[2023-11-16 23:29:36 +0000] [8867] [DEBUG] GET /
+[2023-11-16 23:29:36 +0000] [8869] [DEBUG] HEAD /favicon.ico
+[2023-11-17 00:58:11 +0000] [8866] [DEBUG] GET /
+[2023-11-17 01:14:47 +0000] [8869] [DEBUG] GET /
+[2023-11-17 01:14:48 +0000] [8866] [DEBUG] GET /Public/home/js/check.js
+[2023-11-17 01:39:53 +0000] [8866] [DEBUG] GET /
+[2023-11-17 01:39:54 +0000] [8869] [DEBUG] GET /Public/home/js/check.js
+[2023-11-17 01:47:15 +0000] [8867] [DEBUG] HEAD /
+[2023-11-17 01:47:15 +0000] [8867] [DEBUG] Ignoring EPIPE
+[2023-11-17 01:47:37 +0000] [8867] [DEBUG] GET /
+[2023-11-17 02:04:35 +0000] [8870] [DEBUG] OPTIONS /usuario/
+[2023-11-17 02:04:36 +0000] [8869] [DEBUG] GET /usuario/
+[2023-11-17 02:04:40 +0000] [8867] [DEBUG] OPTIONS /login/
+[2023-11-17 02:04:40 +0000] [8868] [DEBUG] POST /login/
+[2023-11-17 02:04:42 +0000] [8867] [DEBUG] GET /usuario/
+[2023-11-17 02:04:59 +0000] [8868] [DEBUG] OPTIONS /type-product/
+[2023-11-17 02:05:00 +0000] [8866] [DEBUG] GET /type-product/
+[2023-11-17 02:05:11 +0000] [8868] [DEBUG] GET /usuario/
+[2023-11-17 02:05:16 +0000] [8869] [DEBUG] GET /usuario/
+[2023-11-17 02:05:21 +0000] [8866] [DEBUG] GET /usuario/
+[2023-11-17 02:05:26 +0000] [8870] [DEBUG] GET /favicon.ico
+[2023-11-17 02:05:33 +0000] [8868] [DEBUG] GET /inventory
+[2023-11-17 02:06:15 +0000] [8867] [DEBUG] GET /epp
+[2023-11-17 02:06:17 +0000] [8870] [DEBUG] GET /epp/
+[2023-11-17 02:06:24 +0000] [8869] [DEBUG] GET /otro/
+[2023-11-17 02:06:27 +0000] [8867] [DEBUG] GET /otros/
+[2023-11-17 02:07:03 +0000] [8867] [DEBUG] GET /inventory/
+[2023-11-17 02:07:24 +0000] [8866] [DEBUG] GET /type-product/
+[2023-11-17 02:09:04 +0000] [8867] [DEBUG] GET /
+[2023-11-17 02:09:08 +0000] [8868] [DEBUG] GET /favicon.ico
+[2023-11-17 02:17:56 +0000] [8866] [DEBUG] GET /
+[2023-11-17 03:21:28 +0000] [8867] [DEBUG] GET /
+[2023-11-17 03:21:29 +0000] [8869] [DEBUG] GET /favicon.ico
+[2023-11-17 03:21:29 +0000] [8870] [DEBUG] GET /favicon.ico
+[2023-11-17 03:21:29 +0000] [8868] [DEBUG] GET /
+[2023-11-17 03:21:30 +0000] [8866] [DEBUG] GET /favicon.ico
+[2023-11-17 04:05:04 +0000] [8868] [DEBUG] GET /
+[2023-11-17 04:06:04 +0000] [8866] [DEBUG] GET /
+[2023-11-17 04:39:35 +0000] [8870] [DEBUG] GET /
+[2023-11-17 04:52:06 +0000] [8869] [DEBUG] GET /.env
+[2023-11-17 05:09:21 +0000] [8867] [DEBUG] GET /owa/auth/logon.aspx
+[2023-11-17 05:46:03 +0000] [8866] [DEBUG] GET /
+[2023-11-17 06:39:58 +0000] [8868] [DEBUG] GET /
+[2023-11-17 06:40:37 +0000] [8868] [DEBUG] GET /
+[2023-11-17 06:40:39 +0000] [8866] [DEBUG] GET /
+[2023-11-17 06:40:43 +0000] [8868] [DEBUG] GET /favicon.ico
+[2023-11-17 06:40:45 +0000] [8869] [DEBUG] GET /robots.txt
+[2023-11-17 06:40:54 +0000] [8868] [DEBUG] GET /.well-known/security.txt
+[2023-11-17 06:43:10 +0000] [8869] [DEBUG] POST /Autodiscover/Autodiscover.xml
+[2023-11-17 06:52:49 +0000] [8870] [DEBUG] GET /
+[2023-11-17 06:54:57 +0000] [8869] [DEBUG] POST /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[2023-11-17 07:02:19 +0000] [8869] [DEBUG] GET /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[2023-11-17 07:08:14 +0000] [8866] [DEBUG] GET /
+[2023-11-17 07:08:15 +0000] [8868] [DEBUG] GET /favicon.ico
+[2023-11-17 07:08:16 +0000] [8867] [DEBUG] GET /favicon.ico
+[2023-11-17 07:32:50 +0000] [8867] [DEBUG] GET /
+[2023-11-17 07:39:41 +0000] [8870] [DEBUG] GET /
+[2023-11-17 07:57:59 +0000] [8870] [DEBUG] GET /console/
+[2023-11-17 08:13:33 +0000] [8870] [DEBUG] GET /_ignition/execute-solution
+[2023-11-17 08:18:27 +0000] [8869] [DEBUG] GET /
+[2023-11-17 08:27:47 +0000] [8869] [DEBUG] GET /
+[2023-11-17 08:37:02 +0000] [8867] [DEBUG] GET /actuator/gateway/routes
+[2023-11-17 08:37:08 +0000] [8869] [DEBUG] GET /
+[2023-11-17 08:38:12 +0000] [8869] [DEBUG] POST /FD873AC4-CF86-4FED-84EC-4BD59C6F17A7
+[2023-11-17 09:08:17 +0000] [8869] [DEBUG] GET /
+[2023-11-17 09:08:22 +0000] [8868] [DEBUG] GET /
+[2023-11-17 09:08:27 +0000] [8866] [DEBUG] GET /favicon.ico
+[2023-11-17 09:23:50 +0000] [8869] [DEBUG] GET /geoserver
+[2023-11-17 09:25:37 +0000] [8867] [DEBUG] GET /
+[2023-11-17 09:37:24 +0000] [8870] [DEBUG] GET /
+[2023-11-17 09:55:20 +0000] [8866] [DEBUG] GET /
+[2023-11-17 09:55:22 +0000] [8869] [DEBUG] GET /favicon.ico
+[2023-11-17 10:09:38 +0000] [8866] [DEBUG] GET /
+[2023-11-17 10:09:43 +0000] [8869] [DEBUG] GET /
+[2023-11-17 10:26:23 +0000] [8870] [DEBUG] GET /
+[2023-11-17 10:29:56 +0000] [8870] [DEBUG] GET /webui/
+[2023-11-17 10:34:27 +0000] [8866] [DEBUG] GET /dns-query
+[2023-11-17 10:34:43 +0000] [8867] [DEBUG] GET /
+[2023-11-17 10:37:14 +0000] [8868] [DEBUG] GET /geoserver/web/
+[2023-11-17 10:37:45 +0000] [8867] [DEBUG] GET /.git/config
+[2023-11-17 10:38:39 +0000] [8867] [DEBUG] GET /
+[2023-11-17 10:55:36 +0000] [8868] [DEBUG] GET /
+[2023-11-17 10:55:37 +0000] [8866] [DEBUG] GET /favicon.ico
+[2023-11-17 11:12:25 +0000] [8866] [DEBUG] GET /
+[2023-11-17 11:12:36 +0000] [8870] [DEBUG] GET /favicon.ico
+[2023-11-17 11:29:49 +0000] [8867] [DEBUG] GET /.env
+[2023-11-17 11:29:50 +0000] [8869] [DEBUG] POST /
+[2023-11-17 11:29:51 +0000] [8867] [DEBUG] POST /core/.env
+[2023-11-17 11:29:51 +0000] [8869] [DEBUG] GET /core/.env
+[2023-11-17 11:29:52 +0000] [8867] [DEBUG] POST /
+[2023-11-17 11:29:53 +0000] [8870] [DEBUG] POST /core/.env
+[2023-11-17 11:50:00 +0000] [8866] [DEBUG] GET /autodiscover/autodiscover.json
+[2023-11-17 12:54:37 +0000] [8866] [DEBUG] GET /
+[2023-11-17 12:58:06 +0000] [8868] [DEBUG] GET /
+[2023-11-17 14:09:37 +0000] [8870] [DEBUG] GET /favicon.ico
+[2023-11-17 14:12:15 +0000] [8866] [DEBUG] GET /type-product/
+[2023-11-17 14:12:27 +0000] [8869] [DEBUG] OPTIONS /login/
+[2023-11-17 14:12:27 +0000] [8870] [DEBUG] POST /login/
+[2023-11-17 14:12:28 +0000] [8869] [DEBUG] OPTIONS /usuario/
+[2023-11-17 14:12:28 +0000] [8866] [DEBUG] GET /usuario/
+[2023-11-17 14:13:24 +0000] [8867] [DEBUG] OPTIONS /usuario/2
+[2023-11-17 14:13:25 +0000] [8866] [DEBUG] OPTIONS /usuario/2/
+[2023-11-17 14:13:25 +0000] [8869] [DEBUG] GET /usuario/2/
+[2023-11-17 14:13:32 +0000] [8866] [DEBUG] PUT /usuario/2/
+[2023-11-17 14:13:34 +0000] [8870] [DEBUG] GET /usuario/
+[2023-11-17 14:13:39 +0000] [8866] [DEBUG] GET /usuario/
+[2023-11-17 14:14:29 +0000] [8868] [DEBUG] GET /usuario/2/
+[2023-11-17 14:14:36 +0000] [8869] [DEBUG] PUT /usuario/2/
+[2023-11-17 14:14:38 +0000] [8870] [DEBUG] GET /usuario/
+[2023-11-17 14:14:59 +0000] [8866] [DEBUG] GET /usuario/2/
+[2023-11-17 14:15:03 +0000] [8867] [DEBUG] PUT /usuario/2/
+[2023-11-17 14:15:05 +0000] [8868] [DEBUG] GET /usuario/
+[2023-11-17 14:20:09 +0000] [8869] [DEBUG] GET /type-product/
+[2023-11-17 14:20:13 +0000] [8870] [DEBUG] GET /usuario/
+[2023-11-17 14:22:43 +0000] [8869] [DEBUG] GET /type-product/
+[2023-11-17 14:22:47 +0000] [8868] [DEBUG] GET /
+[2023-11-17 14:22:51 +0000] [8866] [DEBUG] GET /usuario/
+[2023-11-17 14:22:54 +0000] [8867] [DEBUG] GET /usuario/2/
+[2023-11-17 14:23:01 +0000] [8866] [DEBUG] PUT /usuario/2/
+[2023-11-17 14:23:03 +0000] [8870] [DEBUG] GET /usuario/
+[2023-11-17 14:26:49 +0000] [8868] [DEBUG] GET /
+[2023-11-17 14:26:51 +0000] [8870] [DEBUG] GET /
+[2023-11-17 14:26:54 +0000] [8868] [DEBUG] GET /usuario/
+[2023-11-17 14:27:10 +0000] [8870] [DEBUG] GET /usuario/
+[2023-11-17 14:27:37 +0000] [8866] [DEBUG] GET /usuario/
+[2023-11-17 14:27:40 +0000] [8869] [DEBUG] GET /usuario/2/
+[2023-11-17 14:27:46 +0000] [8870] [DEBUG] GET /usuario/
+[2023-11-17 14:29:03 +0000] [8870] [DEBUG] GET /usuario/
+[2023-11-17 14:29:12 +0000] [8868] [DEBUG] GET /usuario/2/
+[2023-11-17 14:29:20 +0000] [8869] [DEBUG] PUT /usuario/2/
+[2023-11-17 14:29:21 +0000] [8870] [DEBUG] GET /usuario/
+[2023-11-17 14:30:36 +0000] [8869] [DEBUG] OPTIONS /usuario/3
+[2023-11-17 14:30:36 +0000] [8866] [DEBUG] OPTIONS /usuario/3/
+[2023-11-17 14:30:37 +0000] [8868] [DEBUG] GET /usuario/3/
+[2023-11-17 14:30:47 +0000] [8866] [DEBUG] PUT /usuario/3/
+[2023-11-17 14:30:48 +0000] [8867] [DEBUG] GET /usuario/
+[2023-11-17 15:04:42 +0000] [8868] [DEBUG] GET /usuario/
+[2023-11-17 15:08:52 +0000] [8867] [DEBUG] GET /usuario/
+[2023-11-17 15:08:56 +0000] [8866] [DEBUG] GET /usuario/2/
+[2023-11-17 15:09:01 +0000] [8869] [DEBUG] PUT /usuario/2/
+[2023-11-17 15:09:03 +0000] [8868] [DEBUG] GET /usuario/
+[2023-11-17 15:11:21 +0000] [8868] [DEBUG] GET /usuario/
+[2023-11-17 15:12:10 +0000] [8870] [DEBUG] GET /usuario/
+[2023-11-17 15:12:14 +0000] [8867] [DEBUG] GET /usuario/3/
+[2023-11-17 15:12:20 +0000] [8866] [DEBUG] GET /usuario/2/
+[2023-11-17 15:12:21 +0000] [8868] [DEBUG] GET /usuario/
+[2023-11-17 15:12:31 +0000] [8866] [DEBUG] PUT /usuario/2/
+[2023-11-17 15:12:32 +0000] [8867] [DEBUG] PATCH /usuario/2/
+[2023-11-17 15:12:32 +0000] [8869] [DEBUG] GET /usuario/
+[2023-11-17 15:12:50 +0000] [8867] [DEBUG] GET /usuario/3/
+[2023-11-17 15:13:00 +0000] [8869] [DEBUG] PUT /usuario/3/
+[2023-11-17 15:13:00 +0000] [8868] [DEBUG] PATCH /usuario/3/
+[2023-11-17 15:13:01 +0000] [8869] [DEBUG] GET /usuario/
+[2023-11-17 15:14:46 +0000] [8870] [DEBUG] GET /usuario/
+[2023-11-17 15:14:48 +0000] [8868] [DEBUG] GET /usuario/2/
+[2023-11-17 15:14:54 +0000] [8866] [DEBUG] PUT /usuario/2/
+[2023-11-17 15:14:56 +0000] [8867] [DEBUG] GET /usuario/
+[2023-11-17 15:14:56 +0000] [8866] [DEBUG] PATCH /usuario/2/
+[2023-11-17 15:15:02 +0000] [8867] [DEBUG] GET /usuario/
+[2023-11-17 15:15:12 +0000] [8869] [DEBUG] GET /usuario/
+[2023-11-17 15:15:22 +0000] [8866] [DEBUG] GET /usuario/2/
+[2023-11-17 15:15:39 +0000] [8867] [DEBUG] PUT /usuario/2/
+[2023-11-17 15:15:40 +0000] [8866] [DEBUG] PATCH /usuario/2/
+[2023-11-17 15:15:40 +0000] [8867] [DEBUG] GET /usuario/
+[2023-11-17 15:23:16 +0000] [8869] [DEBUG] GET /usuario/
+[2023-11-17 15:26:41 +0000] [8868] [DEBUG] GET /
+[2023-11-17 15:27:03 +0000] [8870] [DEBUG] GET /favicon.ico
+[2023-11-17 15:27:08 +0000] [8869] [DEBUG] GET /robots.txt
+[2023-11-17 15:27:13 +0000] [8870] [DEBUG] GET /sitemap.xml
+[2023-11-17 15:31:18 +0000] [8870] [DEBUG] GET /usuario/
+[2023-11-17 15:31:21 +0000] [8868] [DEBUG] GET /usuario/2/
+[2023-11-17 15:31:26 +0000] [8870] [DEBUG] PUT /usuario/2/
+[2023-11-17 15:31:27 +0000] [8867] [DEBUG] PATCH /usuario/2/
+[2023-11-17 15:31:28 +0000] [8870] [DEBUG] GET /usuario/
+[2023-11-17 15:37:31 +0000] [8870] [DEBUG] GET /usuario/2/
+[2023-11-17 15:37:34 +0000] [8867] [DEBUG] PUT /usuario/2/
+[2023-11-17 15:37:35 +0000] [8870] [DEBUG] PATCH /usuario/2/
+[2023-11-17 15:37:35 +0000] [8867] [DEBUG] GET /usuario/
+[2023-11-17 15:38:34 +0000] [8866] [DEBUG] GET /usuario/
+[2023-11-17 15:40:05 +0000] [8869] [DEBUG] GET /usuario/2/
+[2023-11-17 15:40:08 +0000] [8866] [DEBUG] PUT /usuario/2/
+[2023-11-17 15:40:11 +0000] [8868] [DEBUG] GET /usuario/
+[2023-11-17 15:40:18 +0000] [8866] [DEBUG] GET /usuario/
+[2023-11-17 15:40:26 +0000] [8868] [DEBUG] GET /usuario/2/
+[2023-11-17 15:40:30 +0000] [8867] [DEBUG] PUT /usuario/2/
+[2023-11-17 15:40:31 +0000] [8868] [DEBUG] GET /usuario/
+[2023-11-17 15:41:56 +0000] [8870] [DEBUG] GET /usuario/
+[2023-11-17 15:41:57 +0000] [8869] [DEBUG] GET /usuario/2/
+[2023-11-17 15:42:01 +0000] [8870] [DEBUG] PUT /usuario/2/
+[2023-11-17 15:42:02 +0000] [8868] [DEBUG] PATCH /usuario/2/
+[2023-11-17 15:42:03 +0000] [8870] [DEBUG] GET /usuario/
+[2023-11-17 15:42:28 +0000] [8866] [DEBUG] GET /usuario/
+[2023-11-17 15:42:29 +0000] [8869] [DEBUG] GET /usuario/
+[2023-11-17 15:42:31 +0000] [8866] [DEBUG] GET /usuario/2/
+[2023-11-17 15:42:37 +0000] [8867] [DEBUG] PUT /usuario/2/
+[2023-11-17 15:42:37 +0000] [8870] [DEBUG] PATCH /usuario/2/
+[2023-11-17 15:42:38 +0000] [8867] [DEBUG] GET /usuario/
+[2023-11-17 15:42:57 +0000] [8870] [DEBUG] GET /usuario/2/
+[2023-11-17 15:43:02 +0000] [8867] [DEBUG] PUT /usuario/2/
+[2023-11-17 15:43:03 +0000] [8866] [DEBUG] GET /usuario/
+[2023-11-17 15:43:48 +0000] [8869] [DEBUG] GET /usuario/
+[2023-11-17 15:43:49 +0000] [8868] [DEBUG] GET /usuario/
+[2023-11-17 15:43:51 +0000] [8866] [DEBUG] GET /usuario/
+[2023-11-17 15:43:52 +0000] [8868] [DEBUG] GET /usuario/
+[2023-11-17 15:43:53 +0000] [8866] [DEBUG] GET /usuario/
+[2023-11-17 15:43:56 +0000] [8868] [DEBUG] GET /usuario/2/
+[2023-11-17 15:44:00 +0000] [8866] [DEBUG] PUT /usuario/2/
+[2023-11-17 15:44:01 +0000] [8870] [DEBUG] PATCH /usuario/2/
+[2023-11-17 15:44:01 +0000] [8866] [DEBUG] GET /usuario/
+[2023-11-17 16:04:41 +0000] [8869] [DEBUG] GET /usuario/
+[2023-11-17 16:04:44 +0000] [8867] [DEBUG] GET /usuario/
+[2023-11-17 16:04:59 +0000] [8868] [DEBUG] GET /usuario/
+[2023-11-17 16:05:02 +0000] [8867] [DEBUG] GET /usuario/
+[2023-11-17 16:05:11 +0000] [8868] [DEBUG] GET /usuario/3/
+[2023-11-17 16:05:23 +0000] [8869] [DEBUG] PUT /usuario/3/
+[2023-11-17 16:05:23 +0000] [8866] [DEBUG] PATCH /usuario/3/
+[2023-11-17 16:05:24 +0000] [8869] [DEBUG] GET /usuario/
+[2023-11-17 16:05:31 +0000] [8866] [DEBUG] GET /usuario/
+[2023-11-17 16:06:01 +0000] [8868] [DEBUG] GET /usuario/2/
+[2023-11-17 16:06:06 +0000] [8869] [DEBUG] PUT /usuario/2/
+[2023-11-17 16:06:07 +0000] [8870] [DEBUG] PATCH /usuario/2/
+[2023-11-17 16:06:07 +0000] [8869] [DEBUG] GET /usuario/
+[2023-11-17 16:06:36 +0000] [8867] [DEBUG] GET /usuario/2/
+[2023-11-17 16:06:39 +0000] [8866] [DEBUG] GET /usuario/
+[2023-11-17 16:08:53 +0000] [8867] [DEBUG] OPTIONS /login/
+[2023-11-17 16:08:54 +0000] [8869] [DEBUG] POST /login/
+[2023-11-17 16:08:54 +0000] [8867] [DEBUG] OPTIONS /usuario/
+[2023-11-17 16:08:54 +0000] [8870] [DEBUG] GET /usuario/
+[2023-11-17 16:55:34 +0000] [8866] [DEBUG] OPTIONS /usuario/
+[2023-11-17 16:55:34 +0000] [8870] [DEBUG] GET /usuario/
+[2023-11-17 16:55:37 +0000] [8866] [DEBUG] GET /usuario/
+[2023-11-17 16:55:40 +0000] [8870] [DEBUG] OPTIONS /usuario/2
+[2023-11-17 16:55:40 +0000] [8869] [DEBUG] GET /usuario/2
+[2023-11-17 16:55:40 +0000] [8868] [DEBUG] OPTIONS /usuario/2/
+[2023-11-17 16:55:40 +0000] [8867] [DEBUG] GET /usuario/2/
+[2023-11-17 16:56:28 +0000] [8867] [DEBUG] PUT /usuario/2/
+[2023-11-17 16:56:31 +0000] [8868] [DEBUG] GET /usuario/
+[2023-11-17 16:56:38 +0000] [8867] [DEBUG] GET /usuario/
+[2023-11-17 16:56:41 +0000] [8866] [DEBUG] GET /usuario/2/
+[2023-11-17 16:56:54 +0000] [8869] [DEBUG] PUT /usuario/2/
+[2023-11-17 16:56:57 +0000] [8867] [DEBUG] GET /usuario/
+[2023-11-17 16:57:08 +0000] [8866] [DEBUG] GET /usuario/
+[2023-11-17 16:57:12 +0000] [8870] [DEBUG] GET /usuario/
+[2023-11-17 16:57:28 +0000] [8866] [DEBUG] GET /usuario/
+[2023-11-17 16:57:29 +0000] [8870] [DEBUG] GET /usuario/2/
+[2023-11-17 16:57:47 +0000] [8867] [DEBUG] PUT /usuario/2/
+[2023-11-17 16:57:48 +0000] [8868] [DEBUG] PATCH /usuario/2/
+[2023-11-17 16:57:49 +0000] [8867] [DEBUG] GET /usuario/
+[2023-11-17 16:57:55 +0000] [8868] [DEBUG] GET /usuario/
+[2023-11-17 16:57:57 +0000] [8869] [DEBUG] GET /usuario/2/
+[2023-11-17 16:58:08 +0000] [8867] [DEBUG] PUT /usuario/2/
+[2023-11-17 16:58:11 +0000] [8870] [DEBUG] GET /usuario/
+[2023-11-17 16:58:19 +0000] [8867] [DEBUG] GET /usuario/
+[2023-11-17 16:58:21 +0000] [8869] [DEBUG] GET /usuario/2/
+[2023-11-17 16:58:31 +0000] [8867] [DEBUG] PUT /usuario/2/
+[2023-11-17 16:58:31 +0000] [8870] [DEBUG] PATCH /usuario/2/
+[2023-11-17 16:58:32 +0000] [8867] [DEBUG] GET /usuario/
+[2023-11-17 16:58:34 +0000] [8870] [DEBUG] GET /usuario/2/
+[2023-11-17 17:10:40 +0000] [8868] [DEBUG] GET /
+[2023-11-17 17:24:13 +0000] [8868] [DEBUG] PUT /usuario/2/
+[2023-11-17 17:24:15 +0000] [8866] [DEBUG] GET /usuario/
+[2023-11-17 17:24:25 +0000] [8868] [DEBUG] GET /usuario/
+[2023-11-17 17:24:29 +0000] [8870] [DEBUG] GET /usuario/2/
+[2023-11-17 17:24:34 +0000] [8869] [DEBUG] PUT /usuario/2/
+[2023-11-17 17:24:34 +0000] [8867] [DEBUG] PATCH /usuario/2/
+[2023-11-17 17:24:35 +0000] [8869] [DEBUG] GET /usuario/
+[2023-11-17 17:24:41 +0000] [8867] [DEBUG] GET /usuario/
+[2023-11-17 17:24:44 +0000] [8868] [DEBUG] GET /usuario/2/
+[2023-11-17 17:24:47 +0000] [8867] [DEBUG] PUT /usuario/2/
+[2023-11-17 17:24:47 +0000] [8866] [DEBUG] PATCH /usuario/2/
+[2023-11-17 17:24:48 +0000] [8867] [DEBUG] GET /usuario/
+[2023-11-17 17:40:45 +0000] [8869] [DEBUG] GET /usuario/2/
+[2023-11-17 17:41:05 +0000] [8866] [DEBUG] PUT /usuario/2/
+[2023-11-17 17:41:07 +0000] [8867] [DEBUG] PATCH /usuario/2/
+[2023-11-17 17:41:07 +0000] [8866] [DEBUG] GET /usuario/
+[2023-11-17 17:41:12 +0000] [8867] [DEBUG] GET /usuario/2/
+[2023-11-17 17:41:14 +0000] [8866] [DEBUG] PUT /usuario/2/
+[2023-11-17 17:41:14 +0000] [8867] [DEBUG] PATCH /usuario/2/
+[2023-11-17 17:41:15 +0000] [8866] [DEBUG] GET /usuario/
+[2023-11-17 17:41:16 +0000] [8870] [DEBUG] GET /usuario/
+[2023-11-17 17:41:19 +0000] [8866] [DEBUG] GET /usuario/
+[2023-11-17 17:41:21 +0000] [8870] [DEBUG] GET /usuario/2/
+[2023-11-17 17:41:27 +0000] [8866] [DEBUG] PUT /usuario/2/
+[2023-11-17 17:41:27 +0000] [8870] [DEBUG] PATCH /usuario/2/
+[2023-11-17 17:41:28 +0000] [8866] [DEBUG] GET /usuario/
+[2023-11-17 17:41:33 +0000] [8869] [DEBUG] GET /usuario/
+[2023-11-17 17:41:35 +0000] [8866] [DEBUG] GET /usuario/2/
+[2023-11-17 17:41:39 +0000] [8869] [DEBUG] PUT /usuario/2/
+[2023-11-17 17:41:39 +0000] [8866] [DEBUG] PATCH /usuario/2/
+[2023-11-17 17:41:40 +0000] [8869] [DEBUG] GET /usuario/
+[2023-11-17 17:41:45 +0000] [8866] [DEBUG] GET /usuario/
+[2023-11-17 18:13:52 +0000] [8866] [DEBUG] GET /
+[2023-11-17 18:52:45 +0000] [8869] [DEBUG] GET /ReportServer
+[2023-11-17 18:57:40 +0000] [8867] [DEBUG] OPTIONS /usuario/
+[2023-11-17 18:57:40 +0000] [8870] [DEBUG] GET /usuario/
+[2023-11-17 18:57:45 +0000] [8866] [DEBUG] OPTIONS /login/
+[2023-11-17 18:57:45 +0000] [8869] [DEBUG] POST /login/
+[2023-11-17 18:57:46 +0000] [8866] [DEBUG] GET /usuario/
+[2023-11-17 18:57:53 +0000] [8869] [DEBUG] OPTIONS /usuario/2
+[2023-11-17 18:57:53 +0000] [8867] [DEBUG] OPTIONS /usuario/2/
+[2023-11-17 18:57:54 +0000] [8870] [DEBUG] GET /usuario/2/
+[2023-11-17 18:57:57 +0000] [8867] [DEBUG] GET /usuario/
+[2023-11-17 18:57:57 +0000] [8870] [DEBUG] GET /usuario/2/
+[2023-11-17 18:58:13 +0000] [8869] [DEBUG] PUT /usuario/2/
+[2023-11-17 18:58:15 +0000] [8870] [DEBUG] GET /usuario/
+[2023-11-17 18:58:27 +0000] [8868] [DEBUG] GET /usuario/2/
+[2023-11-17 18:58:32 +0000] [8870] [DEBUG] PUT /usuario/2/
+[2023-11-17 18:58:34 +0000] [8866] [DEBUG] GET /usuario/
+[2023-11-17 18:58:36 +0000] [8870] [DEBUG] GET /usuario/2/
+[2023-11-17 18:58:42 +0000] [8866] [DEBUG] PUT /usuario/2/
+[2023-11-17 18:58:44 +0000] [8870] [DEBUG] GET /usuario/
+[2023-11-17 18:58:45 +0000] [8869] [DEBUG] PATCH /usuario/2/
+[2023-11-17 18:58:50 +0000] [8870] [DEBUG] GET /usuario/
+[2023-11-17 18:58:54 +0000] [8869] [DEBUG] GET /usuario/2/
+[2023-11-17 18:59:09 +0000] [8866] [DEBUG] PUT /usuario/2/
+[2023-11-17 18:59:11 +0000] [8869] [DEBUG] GET /usuario/
+[2023-11-17 19:07:38 +0000] [8870] [DEBUG] GET /usuario/
+[2023-11-17 19:07:41 +0000] [8867] [DEBUG] GET /usuario/2/
+[2023-11-17 19:07:50 +0000] [8866] [DEBUG] PUT /usuario/2/
+[2023-11-17 19:07:52 +0000] [8868] [DEBUG] GET /usuario/
+[2023-11-17 19:07:53 +0000] [8866] [DEBUG] PATCH /usuario/2/
+[2023-11-17 19:07:59 +0000] [8870] [DEBUG] GET /usuario/
+[2023-11-17 19:08:33 +0000] [8870] [DEBUG] OPTIONS /usuario/
+[2023-11-17 19:08:33 +0000] [8866] [DEBUG] GET /usuario/
+[2023-11-17 19:11:09 +0000] [8868] [DEBUG] GET /usuario/
+[2023-11-17 19:11:12 +0000] [8866] [DEBUG] GET /usuario/
+[2023-11-17 19:11:13 +0000] [8869] [DEBUG] GET /usuario/
+[2023-11-17 19:12:20 +0000] [8870] [DEBUG] OPTIONS /login/
+[2023-11-17 19:12:20 +0000] [8867] [DEBUG] POST /login/
+[2023-11-17 19:12:21 +0000] [8870] [DEBUG] GET /usuario/
+[2023-11-17 19:12:25 +0000] [8867] [DEBUG] OPTIONS /usuario/2
+[2023-11-17 19:12:25 +0000] [8869] [DEBUG] OPTIONS /usuario/2/
+[2023-11-17 19:12:26 +0000] [8866] [DEBUG] GET /usuario/2/
+[2023-11-17 19:12:40 +0000] [8869] [DEBUG] PUT /usuario/2/
+[2023-11-17 19:12:41 +0000] [8868] [DEBUG] PATCH /usuario/2/
+[2023-11-17 19:12:41 +0000] [8866] [DEBUG] GET /usuario/
+[2023-11-17 19:12:45 +0000] [8868] [DEBUG] GET /usuario/
+[2023-11-17 19:13:01 +0000] [8866] [DEBUG] GET /usuario/2/
+[2023-11-17 19:13:19 +0000] [8868] [DEBUG] PUT /usuario/2/
+[2023-11-17 19:13:21 +0000] [8866] [DEBUG] GET /usuario/
+[2023-11-17 19:13:24 +0000] [8868] [DEBUG] GET /usuario/
+[2023-11-17 19:13:26 +0000] [8870] [DEBUG] GET /usuario/
+[2023-11-17 19:13:27 +0000] [8867] [DEBUG] GET /usuario/
+[2023-11-17 19:13:37 +0000] [8870] [DEBUG] GET /usuario/2/
+[2023-11-17 19:13:45 +0000] [8866] [DEBUG] PUT /usuario/2/
+[2023-11-17 19:13:50 +0000] [8867] [DEBUG] PATCH /usuario/2/
+[2023-11-17 19:13:55 +0000] [8866] [DEBUG] GET /usuario/
+[2023-11-17 19:13:59 +0000] [8869] [DEBUG] GET /usuario/2/
+[2023-11-17 19:14:01 +0000] [8866] [DEBUG] GET /usuario/2/
+[2023-11-17 19:14:04 +0000] [8869] [DEBUG] GET /usuario/
+[2023-11-17 19:14:04 +0000] [8866] [DEBUG] GET /usuario/
+[2023-11-17 19:14:07 +0000] [8869] [DEBUG] PUT /usuario/2/
+[2023-11-17 19:14:07 +0000] [8867] [DEBUG] PATCH /usuario/2/
+[2023-11-17 19:14:08 +0000] [8869] [DEBUG] GET /usuario/
+[2023-11-17 19:14:14 +0000] [8870] [DEBUG] PATCH /usuario/2/
+[2023-11-17 19:14:38 +0000] [8866] [DEBUG] GET /usuario/
+[2023-11-17 19:14:38 +0000] [8869] [DEBUG] GET /usuario/2/
+[2023-11-17 19:14:41 +0000] [8866] [DEBUG] GET /usuario/
+[2023-11-17 19:14:48 +0000] [8868] [DEBUG] GET /usuario/
+[2023-11-17 19:15:15 +0000] [8866] [DEBUG] GET /usuario/
+[2023-11-17 19:15:24 +0000] [8870] [DEBUG] OPTIONS /usuario/3
+[2023-11-17 19:15:25 +0000] [8868] [DEBUG] OPTIONS /usuario/3/
+[2023-11-17 19:15:25 +0000] [8869] [DEBUG] GET /usuario/3/
+[2023-11-17 19:15:34 +0000] [8868] [DEBUG] PUT /usuario/3/
+[2023-11-17 19:15:35 +0000] [8866] [DEBUG] PATCH /usuario/3/
+[2023-11-17 19:15:35 +0000] [8868] [DEBUG] GET /usuario/
+[2023-11-17 19:15:37 +0000] [8866] [DEBUG] GET /usuario/2/
+[2023-11-17 19:15:47 +0000] [8867] [DEBUG] PUT /usuario/2/
+[2023-11-17 19:15:47 +0000] [8869] [DEBUG] PATCH /usuario/2/
+[2023-11-17 19:15:48 +0000] [8867] [DEBUG] GET /usuario/
+[2023-11-17 19:15:52 +0000] [8869] [DEBUG] GET /usuario/
+[2023-11-17 19:15:55 +0000] [8870] [DEBUG] GET /usuario/
+[2023-11-17 19:21:26 +0000] [8869] [DEBUG] OPTIONS /usuario/
+[2023-11-17 19:21:26 +0000] [8868] [DEBUG] GET /usuario/
+[2023-11-17 19:21:30 +0000] [8870] [DEBUG] OPTIONS /login/
+[2023-11-17 19:21:30 +0000] [8867] [DEBUG] POST /login/
+[2023-11-17 19:21:31 +0000] [8868] [DEBUG] GET /usuario/
+[2023-11-17 19:21:38 +0000] [8870] [DEBUG] OPTIONS /usuario/2
+[2023-11-17 19:21:38 +0000] [8869] [DEBUG] GET /usuario/2
+[2023-11-17 19:21:39 +0000] [8867] [DEBUG] OPTIONS /usuario/2/
+[2023-11-17 19:21:39 +0000] [8866] [DEBUG] GET /usuario/2/
+[2023-11-17 19:22:35 +0000] [8868] [DEBUG] PUT /usuario/2/
+[2023-11-17 19:22:37 +0000] [8866] [DEBUG] PATCH /usuario/2/
+[2023-11-17 19:22:37 +0000] [8868] [DEBUG] GET /usuario/
+[2023-11-17 19:22:39 +0000] [8866] [DEBUG] PATCH /usuario/2/
+[2023-11-17 19:22:56 +0000] [8867] [DEBUG] GET /usuario/
+[2023-11-17 19:24:21 +0000] [8867] [DEBUG] GET /usuario/2/
+[2023-11-17 19:24:29 +0000] [8869] [DEBUG] PUT /usuario/2/
+[2023-11-17 19:24:32 +0000] [8866] [DEBUG] PATCH /usuario/2/
+[2023-11-17 19:24:32 +0000] [8869] [DEBUG] GET /usuario/
+[2023-11-17 19:24:33 +0000] [8870] [DEBUG] PATCH /usuario/2/
+[2023-11-17 19:24:48 +0000] [8869] [DEBUG] GET /usuario/
+[2023-11-17 19:25:09 +0000] [8868] [DEBUG] GET /usuario/
+[2023-11-17 19:25:11 +0000] [8867] [DEBUG] GET /usuario/
+[2023-11-17 19:25:16 +0000] [8868] [DEBUG] GET /usuario/
+[2023-11-17 19:25:20 +0000] [8867] [DEBUG] GET /usuario/
+[2023-11-17 19:25:59 +0000] [8867] [DEBUG] GET /usuario/2/
+[2023-11-17 19:26:18 +0000] [8868] [DEBUG] PUT /usuario/2/
+[2023-11-17 19:26:20 +0000] [8866] [DEBUG] PATCH /usuario/2/
+[2023-11-17 19:26:20 +0000] [8870] [DEBUG] GET /usuario/
+[2023-11-17 19:26:36 +0000] [8869] [DEBUG] GET /usuario/
+[2023-11-17 19:26:39 +0000] [8870] [DEBUG] OPTIONS /usuario/3
+[2023-11-17 19:26:39 +0000] [8868] [DEBUG] GET /usuario/3
+[2023-11-17 19:26:39 +0000] [8867] [DEBUG] OPTIONS /usuario/3/
+[2023-11-17 19:26:39 +0000] [8866] [DEBUG] GET /usuario/3/
+[2023-11-17 19:26:40 +0000] [8867] [DEBUG] GET /usuario/
+[2023-11-17 19:26:41 +0000] [8866] [DEBUG] GET /usuario/2/
+[2023-11-17 19:26:53 +0000] [8867] [DEBUG] PUT /usuario/2/
+[2023-11-17 19:26:56 +0000] [8869] [DEBUG] GET /usuario/
+[2023-11-17 19:26:59 +0000] [8866] [DEBUG] GET /usuario/
+[2023-11-17 19:27:02 +0000] [8869] [DEBUG] GET /usuario/
+[2023-11-17 19:27:07 +0000] [8866] [DEBUG] GET /usuario/
+[2023-11-17 19:27:10 +0000] [8869] [DEBUG] GET /usuario/2/
+[2023-11-17 19:27:26 +0000] [8868] [DEBUG] PUT /usuario/2/
+[2023-11-17 19:27:30 +0000] [8869] [DEBUG] GET /usuario/
+[2023-11-17 19:27:38 +0000] [8868] [DEBUG] PATCH /usuario/2/
+[2023-11-17 19:27:40 +0000] [8866] [DEBUG] GET /usuario/
+[2023-11-17 19:27:47 +0000] [8870] [DEBUG] GET /usuario/
+[2023-11-17 19:28:19 +0000] [8870] [DEBUG] GET /usuario/2/
+[2023-11-17 19:28:22 +0000] [8869] [DEBUG] GET /usuario/
+[2023-11-17 19:32:45 +0000] [8866] [DEBUG] GET /usuario/
+[2023-11-17 19:32:48 +0000] [8867] [DEBUG] GET /usuario/
+[2023-11-17 19:32:49 +0000] [8866] [DEBUG] GET /usuario/2/
+[2023-11-17 19:32:55 +0000] [8867] [DEBUG] PUT /usuario/2/
+[2023-11-17 19:32:57 +0000] [8868] [DEBUG] GET /usuario/
+[2023-11-17 19:32:58 +0000] [8867] [DEBUG] PATCH /usuario/2/
+[2023-11-17 19:33:07 +0000] [8868] [DEBUG] GET /usuario/2/
+[2023-11-17 19:33:10 +0000] [8869] [DEBUG] GET /usuario/
+[2023-11-17 19:33:11 +0000] [8868] [DEBUG] GET /usuario/
+[2023-11-17 19:33:12 +0000] [8869] [DEBUG] GET /usuario/2/
+[2023-11-17 19:33:29 +0000] [8868] [DEBUG] GET /usuario/
+[2023-11-17 19:33:30 +0000] [8867] [DEBUG] GET /usuario/
+[2023-11-17 19:33:35 +0000] [8868] [DEBUG] GET /usuario/3/
+[2023-11-17 19:33:49 +0000] [8870] [DEBUG] PUT /usuario/3/
+[2023-11-17 19:33:51 +0000] [8866] [DEBUG] GET /usuario/
+[2023-11-17 19:33:54 +0000] [8868] [DEBUG] PATCH /usuario/3/
+[2023-11-17 19:33:55 +0000] [8866] [DEBUG] GET /usuario/
+[2023-11-17 19:34:05 +0000] [8868] [DEBUG] GET /usuario/3/
+[2023-11-17 19:35:42 +0000] [8866] [DEBUG] GET /usuario/
+[2023-11-17 19:35:43 +0000] [8869] [DEBUG] GET /usuario/2/
+[2023-11-17 19:35:48 +0000] [8866] [DEBUG] PUT /usuario/2/
+[2023-11-17 19:35:50 +0000] [8867] [DEBUG] GET /usuario/
+[2023-11-17 19:35:51 +0000] [8870] [DEBUG] PATCH /usuario/2/
+[2023-11-17 19:35:58 +0000] [8868] [DEBUG] GET /usuario/
+[2023-11-17 19:36:14 +0000] [8870] [DEBUG] GET /usuario/
+[2023-11-17 19:36:16 +0000] [8869] [DEBUG] GET /usuario/3/
+[2023-11-17 19:36:27 +0000] [8870] [DEBUG] PUT /usuario/3/
+[2023-11-17 19:36:30 +0000] [8867] [DEBUG] GET /usuario/
+[2023-11-17 19:36:30 +0000] [8868] [DEBUG] GET /usuario/
+[2023-11-17 19:36:33 +0000] [8867] [DEBUG] PATCH /usuario/3/
+[2023-11-17 19:36:33 +0000] [8866] [DEBUG] GET /usuario/
+[2023-11-17 19:36:48 +0000] [8867] [DEBUG] GET /usuario/
+[2023-11-17 19:40:59 +0000] [8870] [DEBUG] GET /usuario/
+[2023-11-17 19:41:06 +0000] [8867] [DEBUG] GET /usuario/
+[2023-11-17 19:41:09 +0000] [8866] [DEBUG] GET /usuario/
+[2023-11-17 19:41:15 +0000] [8867] [DEBUG] GET /usuario/
+[2023-11-17 19:41:15 +0000] [8870] [DEBUG] GET /usuario/
+[2023-11-17 19:41:20 +0000] [8867] [DEBUG] GET /usuario/
+[2023-11-17 19:41:21 +0000] [8869] [DEBUG] GET /usuario/
+[2023-11-17 19:41:26 +0000] [8867] [DEBUG] GET /usuario/
+[2023-11-17 19:41:28 +0000] [8866] [DEBUG] GET /usuario/
+[2023-11-17 19:41:30 +0000] [8867] [DEBUG] OPTIONS /usuario/3
+[2023-11-17 19:41:30 +0000] [8869] [DEBUG] GET /usuario/3
+[2023-11-17 19:41:31 +0000] [8868] [DEBUG] OPTIONS /usuario/3/
+[2023-11-17 19:41:31 +0000] [8870] [DEBUG] GET /usuario/3/
+[2023-11-17 19:41:35 +0000] [8868] [DEBUG] GET /usuario/
+[2023-11-17 19:41:36 +0000] [8870] [DEBUG] GET /usuario/
+[2023-11-17 19:41:41 +0000] [8868] [DEBUG] GET /usuario/
+[2023-11-17 19:41:44 +0000] [8870] [DEBUG] GET /usuario/2/
+[2023-11-17 19:41:50 +0000] [8866] [DEBUG] PUT /usuario/2/
+[2023-11-17 19:41:52 +0000] [8869] [DEBUG] GET /usuario/
+[2023-11-17 19:42:04 +0000] [8866] [DEBUG] GET /usuario/
+[2023-11-17 19:42:06 +0000] [8867] [DEBUG] PATCH /usuario/2/
+[2023-11-17 19:42:07 +0000] [8866] [DEBUG] GET /usuario/
+[2023-11-17 19:43:04 +0000] [8870] [DEBUG] GET /usuario/
+[2023-11-17 19:43:07 +0000] [8868] [DEBUG] GET /usuario/
+[2023-11-17 19:43:24 +0000] [8869] [DEBUG] GET /usuario/
+[2023-11-17 19:43:30 +0000] [8866] [DEBUG] GET /usuario/3/
+[2023-11-17 19:43:35 +0000] [8869] [DEBUG] PUT /usuario/3/
+[2023-11-17 19:43:37 +0000] [8870] [DEBUG] GET /usuario/
+[2023-11-17 19:43:38 +0000] [8868] [DEBUG] PATCH /usuario/3/
+[2023-11-17 19:43:44 +0000] [8870] [DEBUG] GET /usuario/
+[2023-11-17 19:44:11 +0000] [8868] [DEBUG] GET /usuario/
+[2023-11-17 19:57:54 +0000] [8867] [DEBUG] GET /
+[2023-11-17 20:05:04 +0000] [8866] [DEBUG] GET /usuario/
+[2023-11-17 20:05:07 +0000] [8870] [DEBUG] GET /usuario/2/
+[2023-11-17 20:05:14 +0000] [8866] [DEBUG] PUT /usuario/2/
+[2023-11-17 20:05:16 +0000] [8868] [DEBUG] GET /usuario/
+[2023-11-17 20:05:17 +0000] [8866] [DEBUG] PATCH /usuario/2/
+[2023-11-17 20:05:21 +0000] [8868] [DEBUG] GET /usuario/
+[2023-11-17 20:05:24 +0000] [8866] [DEBUG] OPTIONS /login/
+[2023-11-17 20:05:24 +0000] [8867] [DEBUG] POST /login/
+[2023-11-17 20:05:25 +0000] [8866] [DEBUG] OPTIONS /usuario/
+[2023-11-17 20:05:25 +0000] [8869] [DEBUG] GET /usuario/
+[2023-11-17 20:05:30 +0000] [8866] [DEBUG] OPTIONS /type-product/
+[2023-11-17 20:05:30 +0000] [8868] [DEBUG] GET /type-product/
+[2023-11-17 20:05:32 +0000] [8866] [DEBUG] GET /usuario/
+[2023-11-17 20:05:33 +0000] [8867] [DEBUG] GET /usuario/
+[2023-11-17 20:05:33 +0000] [8866] [DEBUG] GET /usuario/
+[2023-11-17 20:05:34 +0000] [8867] [DEBUG] GET /usuario/
+[2023-11-17 20:05:34 +0000] [8866] [DEBUG] GET /usuario/
+[2023-11-17 20:05:38 +0000] [8867] [DEBUG] GET /usuario/
+[2023-11-17 20:05:40 +0000] [8866] [DEBUG] GET /usuario/
+[2023-11-17 20:05:55 +0000] [8867] [DEBUG] GET /usuario/
+[2023-11-17 20:06:13 +0000] [8866] [DEBUG] GET /usuario/
+[2023-11-17 20:06:15 +0000] [8867] [DEBUG] GET /usuario/3/
+[2023-11-17 20:06:33 +0000] [8870] [DEBUG] PUT /usuario/3/
+[2023-11-17 20:06:40 +0000] [8868] [DEBUG] GET /usuario/
+[2023-11-17 20:06:46 +0000] [8870] [DEBUG] GET /usuario/
+[2023-11-17 20:06:53 +0000] [8867] [DEBUG] GET /usuario/
+[2023-11-17 20:06:54 +0000] [8866] [DEBUG] GET /.env
+[2023-11-17 20:06:59 +0000] [8867] [DEBUG] GET /usuario/
+[2023-11-17 20:07:00 +0000] [8868] [DEBUG] GET /usuario/
+[2023-11-17 20:07:02 +0000] [8867] [DEBUG] GET /usuario/
+[2023-11-17 20:07:03 +0000] [8870] [DEBUG] GET /usuario/
+[2023-11-17 20:07:13 +0000] [8869] [DEBUG] PATCH /usuario/3/
+[2023-11-17 20:07:14 +0000] [8866] [DEBUG] GET /usuario/
+[2023-11-17 20:07:19 +0000] [8869] [DEBUG] GET /usuario/
+[2023-11-17 20:11:06 +0000] [8869] [DEBUG] GET /
+[2023-11-17 20:11:09 +0000] [8870] [DEBUG] GET /
+[2023-11-17 20:35:10 +0000] [8869] [DEBUG] GET /usuario/
+[2023-11-17 20:35:12 +0000] [8867] [DEBUG] GET /usuario/3/
+[2023-11-17 20:35:17 +0000] [8870] [DEBUG] PUT /usuario/3/
+[2023-11-17 20:35:19 +0000] [8868] [DEBUG] GET /usuario/
+[2023-11-17 20:35:21 +0000] [8870] [DEBUG] PATCH /usuario/3/
+[2023-11-17 20:35:35 +0000] [8868] [DEBUG] GET /usuario/
+[2023-11-17 20:37:07 +0000] [8868] [DEBUG] GET /usuario/2/
+[2023-11-17 20:37:15 +0000] [8870] [DEBUG] PUT /usuario/2/
+[2023-11-17 20:37:16 +0000] [8867] [DEBUG] GET /usuario/
+[2023-11-17 20:37:17 +0000] [8866] [DEBUG] PATCH /usuario/2/
+[2023-11-17 20:37:28 +0000] [8867] [DEBUG] GET /usuario/
+[2023-11-17 20:40:16 +0000] [8867] [DEBUG] GET /usuario/
+[2023-11-17 20:40:17 +0000] [8870] [DEBUG] GET /usuario/3/
+[2023-11-17 20:40:23 +0000] [8867] [DEBUG] PUT /usuario/3/
+[2023-11-17 20:40:24 +0000] [8868] [DEBUG] PATCH /usuario/3/
+[2023-11-17 20:40:24 +0000] [8867] [DEBUG] GET /usuario/
+[2023-11-17 20:42:37 +0000] [8866] [DEBUG] GET /usuario/
+[2023-11-17 20:42:39 +0000] [8870] [DEBUG] GET /usuario/3/
+[2023-11-17 20:42:49 +0000] [8866] [DEBUG] GET /usuario/
+[2023-11-17 20:42:50 +0000] [8869] [DEBUG] GET /usuario/3/
+[2023-11-17 20:43:02 +0000] [8866] [DEBUG] GET /usuario/
+[2023-11-17 20:43:04 +0000] [8867] [DEBUG] GET /usuario/3/
+[2023-11-17 20:43:08 +0000] [8866] [DEBUG] PUT /usuario/3/
+[2023-11-17 20:43:10 +0000] [8869] [DEBUG] GET /usuario/
+[2023-11-17 20:43:19 +0000] [8868] [DEBUG] GET /usuario/3/
+[2023-11-17 20:43:26 +0000] [8867] [DEBUG] GET /usuario/3/
+[2023-11-17 20:43:26 +0000] [8869] [DEBUG] PATCH /usuario/3/
+[2023-11-17 20:44:46 +0000] [8869] [DEBUG] GET /usuario/
+[2023-11-17 20:45:07 +0000] [8868] [DEBUG] GET /usuario/3/
+[2023-11-17 20:45:09 +0000] [8869] [DEBUG] GET /usuario/2/
+[2023-11-17 20:45:09 +0000] [8870] [DEBUG] GET /usuario/
+[2023-11-17 20:45:19 +0000] [8869] [DEBUG] GET /usuario/
+[2023-11-17 20:45:26 +0000] [8870] [DEBUG] GET /usuario/
+[2023-11-17 20:45:28 +0000] [8867] [DEBUG] GET /usuario/3/
+[2023-11-17 20:45:34 +0000] [8870] [DEBUG] PUT /usuario/3/
+[2023-11-17 20:45:35 +0000] [8869] [DEBUG] PATCH /usuario/3/
+[2023-11-17 20:45:35 +0000] [8870] [DEBUG] GET /usuario/
+[2023-11-17 20:49:55 +0000] [8866] [DEBUG] GET /usuario/
+[2023-11-17 20:50:01 +0000] [8868] [DEBUG] GET /usuario/
+[2023-11-17 20:50:03 +0000] [8867] [DEBUG] GET /usuario/
+[2023-11-17 20:50:05 +0000] [8868] [DEBUG] GET /usuario/
+[2023-11-17 20:50:06 +0000] [8867] [DEBUG] GET /usuario/
+[2023-11-17 20:50:11 +0000] [8870] [DEBUG] GET /usuario/
+[2023-11-17 20:50:14 +0000] [8866] [DEBUG] GET /usuario/3/
+[2023-11-17 20:50:20 +0000] [8870] [DEBUG] PUT /usuario/3/
+[2023-11-17 20:50:21 +0000] [8868] [DEBUG] PATCH /usuario/3/
+[2023-11-17 20:50:21 +0000] [8869] [DEBUG] GET /usuario/
+[2023-11-17 20:50:31 +0000] [8867] [DEBUG] GET /usuario/
+[2023-11-17 20:51:43 +0000] [8869] [DEBUG] GET /usuario/
+[2023-11-17 20:51:45 +0000] [8868] [DEBUG] GET /usuario/3/
+[2023-11-17 20:51:49 +0000] [8866] [DEBUG] PUT /usuario/3/
+[2023-11-17 20:51:50 +0000] [8867] [DEBUG] PATCH /usuario/3/
+[2023-11-17 20:51:50 +0000] [8870] [DEBUG] GET /usuario/
+[2023-11-17 20:51:59 +0000] [8867] [DEBUG] GET /usuario/
+[2023-11-17 20:52:04 +0000] [8869] [DEBUG] GET /usuario/3/
+[2023-11-17 20:52:11 +0000] [8866] [DEBUG] PUT /usuario/3/
+[2023-11-17 20:52:12 +0000] [8870] [DEBUG] PATCH /usuario/3/
+[2023-11-17 20:52:12 +0000] [8866] [DEBUG] GET /usuario/
+[2023-11-17 20:52:22 +0000] [8870] [DEBUG] GET /usuario/
+[2023-11-17 20:52:46 +0000] [8867] [DEBUG] GET /usuario/3/
+[2023-11-17 20:52:52 +0000] [8868] [DEBUG] PUT /usuario/3/
+[2023-11-17 20:52:53 +0000] [8870] [DEBUG] PATCH /usuario/3/
+[2023-11-17 20:52:54 +0000] [8868] [DEBUG] GET /usuario/
+[2023-11-17 20:53:01 +0000] [8870] [DEBUG] GET /usuario/3/
+[2023-11-17 20:53:04 +0000] [8867] [DEBUG] GET /usuario/
+[2023-11-17 20:53:05 +0000] [8870] [DEBUG] GET /usuario/3/
+[2023-11-17 20:53:11 +0000] [8869] [DEBUG] PUT /usuario/3/
+[2023-11-17 20:53:12 +0000] [8868] [DEBUG] PATCH /usuario/3/
+[2023-11-17 20:53:13 +0000] [8869] [DEBUG] GET /usuario/
+[2023-11-17 20:53:18 +0000] [8866] [DEBUG] GET /usuario/3/
+[2023-11-17 20:53:22 +0000] [8869] [DEBUG] PUT /usuario/3/
+[2023-11-17 20:53:23 +0000] [8870] [DEBUG] PATCH /usuario/3/
+[2023-11-17 20:53:23 +0000] [8869] [DEBUG] GET /usuario/
+[2023-11-17 20:53:36 +0000] [8870] [DEBUG] GET /usuario/3/
+[2023-11-17 20:53:41 +0000] [8867] [DEBUG] PUT /usuario/3/
+[2023-11-17 20:53:41 +0000] [8866] [DEBUG] PATCH /usuario/3/
+[2023-11-17 20:53:42 +0000] [8867] [DEBUG] GET /usuario/
+[2023-11-17 20:53:48 +0000] [8866] [DEBUG] GET /usuario/2/
+[2023-11-17 20:53:56 +0000] [8867] [DEBUG] PUT /usuario/2/
+[2023-11-17 20:53:57 +0000] [8868] [DEBUG] PATCH /usuario/2/
+[2023-11-17 20:53:58 +0000] [8867] [DEBUG] GET /usuario/
+[2023-11-17 20:55:22 +0000] [8870] [DEBUG] GET /usuario/2/
+[2023-11-17 20:55:26 +0000] [8866] [DEBUG] PUT /usuario/2/
+[2023-11-17 20:55:26 +0000] [8869] [DEBUG] PATCH /usuario/2/
+[2023-11-17 20:55:27 +0000] [8866] [DEBUG] GET /usuario/
+[2023-11-17 20:55:45 +0000] [8867] [DEBUG] GET /usuario/2/
+[2023-11-17 20:55:49 +0000] [8866] [DEBUG] PUT /usuario/2/
+[2023-11-17 20:55:50 +0000] [8867] [DEBUG] PATCH /usuario/2/
+[2023-11-17 20:55:51 +0000] [8866] [DEBUG] GET /usuario/
+[2023-11-17 20:56:13 +0000] [8869] [DEBUG] GET /usuario/2/
+[2023-11-17 20:56:17 +0000] [8868] [DEBUG] PUT /usuario/2/
+[2023-11-17 20:56:17 +0000] [8869] [DEBUG] PATCH /usuario/2/
+[2023-11-17 20:56:18 +0000] [8868] [DEBUG] GET /usuario/
+[2023-11-17 20:56:41 +0000] [8870] [DEBUG] GET /usuario/
+[2023-11-17 20:56:44 +0000] [8866] [DEBUG] GET /usuario/3/
+[2023-11-17 20:57:02 +0000] [8870] [DEBUG] PUT /usuario/3/
+[2023-11-17 20:57:02 +0000] [8866] [DEBUG] PATCH /usuario/3/
+[2023-11-17 20:57:03 +0000] [8869] [DEBUG] GET /usuario/
+[2023-11-17 20:57:24 +0000] [8867] [DEBUG] GET /usuario/2/
+[2023-11-17 20:57:32 +0000] [8869] [DEBUG] PUT /usuario/2/
+[2023-11-17 20:57:32 +0000] [8867] [DEBUG] PATCH /usuario/2/
+[2023-11-17 20:57:33 +0000] [8869] [DEBUG] GET /usuario/
+[2023-11-17 20:58:15 +0000] [8868] [DEBUG] GET /usuario/3/
+[2023-11-17 20:58:19 +0000] [8870] [DEBUG] PUT /usuario/3/
+[2023-11-17 20:58:19 +0000] [8869] [DEBUG] PATCH /usuario/3/
+[2023-11-17 20:58:20 +0000] [8870] [DEBUG] GET /usuario/
+[2023-11-17 20:58:35 +0000] [8866] [DEBUG] GET /usuario/3/
+[2023-11-17 20:58:42 +0000] [8869] [DEBUG] PUT /usuario/3/
+[2023-11-17 20:58:42 +0000] [8870] [DEBUG] PATCH /usuario/3/
+[2023-11-17 20:58:44 +0000] [8869] [DEBUG] GET /usuario/
+[2023-11-17 20:59:38 +0000] [8866] [DEBUG] GET /usuario/3/
+[2023-11-17 20:59:46 +0000] [8867] [DEBUG] PUT /usuario/3/
+[2023-11-17 20:59:46 +0000] [8868] [DEBUG] PATCH /usuario/3/
+[2023-11-17 20:59:47 +0000] [8867] [DEBUG] GET /usuario/
+[2023-11-17 21:02:19 +0000] [8867] [DEBUG] GET /usuario/
+[2023-11-17 21:02:22 +0000] [8868] [DEBUG] GET /usuario/3/
+[2023-11-17 21:02:29 +0000] [8867] [DEBUG] PUT /usuario/3/
+[2023-11-17 21:02:30 +0000] [8869] [DEBUG] PATCH /usuario/3/
+[2023-11-17 21:02:30 +0000] [8867] [DEBUG] GET /usuario/
+[2023-11-17 21:03:50 +0000] [8867] [DEBUG] GET /usuario/
+[2023-11-17 21:04:00 +0000] [8869] [DEBUG] GET /usuario/
+[2023-11-17 21:04:01 +0000] [8870] [DEBUG] GET /usuario/3/
+[2023-11-17 21:04:05 +0000] [8869] [DEBUG] PUT /usuario/3/
+[2023-11-17 21:04:07 +0000] [8870] [DEBUG] PATCH /usuario/3/
+[2023-11-17 21:04:07 +0000] [8867] [DEBUG] GET /usuario/
+[2023-11-17 21:04:19 +0000] [8870] [DEBUG] GET /usuario/
+[2023-11-17 21:07:36 +0000] [8870] [DEBUG] OPTIONS /type-product/
+[2023-11-17 21:07:36 +0000] [8867] [DEBUG] GET /type-product/
+[2023-11-17 21:07:41 +0000] [8870] [DEBUG] POST /type-product/
+[2023-11-17 21:07:42 +0000] [8866] [DEBUG] GET /type-product/
+[2023-11-17 21:07:44 +0000] [8870] [DEBUG] OPTIONS /epp/
+[2023-11-17 21:07:44 +0000] [8868] [DEBUG] GET /epp/
+[2023-11-17 21:08:07 +0000] [8867] [DEBUG] POST /epp/
+[2023-11-17 21:08:07 +0000] [8869] [DEBUG] OPTIONS /epp/1/
+[2023-11-17 21:08:08 +0000] [8868] [DEBUG] OPTIONS /epp/1/
+[2023-11-17 21:08:08 +0000] [8870] [DEBUG] PUT /epp/1/
+[2023-11-17 21:08:08 +0000] [8868] [DEBUG] GET /epp/
+[2023-11-17 21:08:09 +0000] [8870] [DEBUG] PATCH /epp/1/
+[2023-11-17 21:08:09 +0000] [8868] [DEBUG] PUT /epp/1/
+[2023-11-17 21:08:22 +0000] [8870] [DEBUG] GET /epp/
+[2023-11-17 21:08:24 +0000] [8866] [DEBUG] GET /epp/
+[2023-11-17 21:08:30 +0000] [8868] [DEBUG] GET /epp/
+[2023-11-17 21:08:32 +0000] [8866] [DEBUG] GET /epp/
+[2023-11-17 21:09:55 +0000] [8869] [DEBUG] GET /epp/1/
+[2023-11-17 21:10:02 +0000] [8867] [DEBUG] PUT /epp/1/
+[2023-11-17 21:10:03 +0000] [8868] [DEBUG] PATCH /epp/1/
+[2023-11-17 21:10:03 +0000] [8866] [DEBUG] PUT /epp/1/
+[2023-11-17 21:10:03 +0000] [8868] [DEBUG] GET /epp/
+[2023-11-17 21:10:43 +0000] [8869] [DEBUG] DELETE /epp/1/
+[2023-11-17 21:10:43 +0000] [8870] [DEBUG] GET /epp/
+[2023-11-17 21:10:44 +0000] [8869] [DEBUG] GET /usuario/
+[2023-11-17 21:10:48 +0000] [8870] [DEBUG] GET /usuario/3/
+[2023-11-17 21:10:54 +0000] [8867] [DEBUG] PUT /usuario/3/
+[2023-11-17 21:10:55 +0000] [8868] [DEBUG] GET /usuario/
+[2023-11-17 21:10:57 +0000] [8867] [DEBUG] PATCH /usuario/3/
+[2023-11-17 21:10:59 +0000] [8868] [DEBUG] GET /usuario/2/
+[2023-11-17 21:11:04 +0000] [8867] [DEBUG] PUT /usuario/2/
+[2023-11-17 21:11:05 +0000] [8866] [DEBUG] PATCH /usuario/2/
+[2023-11-17 21:11:05 +0000] [8867] [DEBUG] GET /usuario/
+[2023-11-17 21:11:17 +0000] [8866] [DEBUG] GET /usuario/
+[2023-11-17 21:14:00 +0000] [8867] [DEBUG] OPTIONS /usuario/
+[2023-11-17 21:14:00 +0000] [8866] [DEBUG] GET /usuario/
+[2023-11-17 21:14:05 +0000] [8870] [DEBUG] OPTIONS /login/
+[2023-11-17 21:14:05 +0000] [8869] [DEBUG] POST /login/
+[2023-11-17 21:14:06 +0000] [8870] [DEBUG] GET /usuario/
+[2023-11-17 21:14:16 +0000] [8869] [DEBUG] GET /usuario/
+[2023-11-17 21:14:17 +0000] [8866] [DEBUG] GET /usuario/
+[2023-11-17 21:14:20 +0000] [8869] [DEBUG] GET /usuario/
+[2023-11-17 21:14:21 +0000] [8866] [DEBUG] GET /usuario/
+[2023-11-17 21:14:22 +0000] [8869] [DEBUG] GET /usuario/
+[2023-11-17 21:14:29 +0000] [8870] [DEBUG] POST /login/
+[2023-11-17 21:14:30 +0000] [8868] [DEBUG] GET /usuario/
+[2023-11-17 21:14:32 +0000] [8867] [DEBUG] GET /usuario/3/
+[2023-11-17 21:14:37 +0000] [8868] [DEBUG] PUT /usuario/3/
+[2023-11-17 21:14:39 +0000] [8869] [DEBUG] PATCH /usuario/3/
+[2023-11-17 21:14:39 +0000] [8868] [DEBUG] GET /usuario/
+[2023-11-17 21:14:46 +0000] [8869] [DEBUG] OPTIONS /usuario/2
+[2023-11-17 21:14:46 +0000] [8867] [DEBUG] OPTIONS /usuario/2/
+[2023-11-17 21:14:46 +0000] [8866] [DEBUG] GET /usuario/2/
+[2023-11-17 21:14:52 +0000] [8867] [DEBUG] PUT /usuario/2/
+[2023-11-17 21:14:53 +0000] [8866] [DEBUG] PATCH /usuario/2/
+[2023-11-17 21:14:54 +0000] [8867] [DEBUG] GET /usuario/
+[2023-11-17 21:15:02 +0000] [8866] [DEBUG] GET /usuario/
+[2023-11-17 21:15:13 +0000] [8869] [DEBUG] GET /usuario/3/
+[2023-11-17 21:15:18 +0000] [8868] [DEBUG] PUT /usuario/3/
+[2023-11-17 21:15:19 +0000] [8866] [DEBUG] PATCH /usuario/3/
+[2023-11-17 21:15:19 +0000] [8868] [DEBUG] GET /usuario/
+[2023-11-17 21:15:28 +0000] [8866] [DEBUG] OPTIONS /usuario/3
+[2023-11-17 21:15:28 +0000] [8869] [DEBUG] OPTIONS /usuario/3/
+[2023-11-17 21:15:28 +0000] [8870] [DEBUG] GET /usuario/3/
+[2023-11-17 21:15:46 +0000] [8869] [DEBUG] PUT /usuario/3/
+[2023-11-17 21:15:46 +0000] [8868] [DEBUG] PATCH /usuario/3/
+[2023-11-17 21:15:47 +0000] [8869] [DEBUG] GET /usuario/
+[2023-11-17 21:16:00 +0000] [8868] [DEBUG] GET /usuario/
+[2023-11-17 21:16:11 +0000] [8870] [DEBUG] GET /usuario/
+[2023-11-17 21:16:22 +0000] [8869] [DEBUG] POST /login/
+[2023-11-17 21:16:22 +0000] [8867] [DEBUG] GET /usuario/
+[2023-11-17 21:16:33 +0000] [8869] [DEBUG] GET /usuario/2/
+[2023-11-17 21:16:46 +0000] [8870] [DEBUG] PUT /usuario/2/
+[2023-11-17 21:16:49 +0000] [8866] [DEBUG] GET /usuario/
+[2023-11-17 21:17:09 +0000] [8867] [DEBUG] GET /usuario/
+[2023-11-17 21:17:11 +0000] [8866] [DEBUG] GET /usuario/
+[2023-11-17 21:17:14 +0000] [8867] [DEBUG] GET /usuario/
+[2023-11-17 21:17:15 +0000] [8866] [DEBUG] PATCH /usuario/2/
+[2023-11-17 21:17:17 +0000] [8868] [DEBUG] GET /usuario/
+[2023-11-17 21:17:20 +0000] [8870] [DEBUG] GET /usuario/
+[2023-11-17 21:17:55 +0000] [8870] [DEBUG] GET /usuario/
+[2023-11-17 21:19:33 +0000] [8866] [DEBUG] GET /usuario/
+[2023-11-17 21:19:42 +0000] [8868] [DEBUG] GET /usuario/2/
+[2023-11-17 21:19:46 +0000] [8870] [DEBUG] PUT /usuario/2/
+[2023-11-17 21:19:47 +0000] [8869] [DEBUG] PATCH /usuario/2/
+[2023-11-17 21:19:48 +0000] [8870] [DEBUG] GET /usuario/
+[2023-11-17 21:20:00 +0000] [8869] [DEBUG] GET /usuario/2/
+[2023-11-17 21:20:04 +0000] [8867] [DEBUG] PUT /usuario/2/
+[2023-11-17 21:20:05 +0000] [8870] [DEBUG] PATCH /usuario/2/
+[2023-11-17 21:20:06 +0000] [8867] [DEBUG] GET /usuario/
+[2023-11-17 21:28:05 +0000] [8866] [DEBUG] GET /usuario/
+[2023-11-17 21:28:13 +0000] [8870] [DEBUG] GET /usuario/
+[2023-11-17 21:28:19 +0000] [8868] [DEBUG] GET /usuario/3/
+[2023-11-17 21:28:25 +0000] [8869] [DEBUG] PUT /usuario/3/
+[2023-11-17 21:28:25 +0000] [8867] [DEBUG] PATCH /usuario/3/
+[2023-11-17 21:28:26 +0000] [8869] [DEBUG] GET /usuario/
+[2023-11-17 21:28:47 +0000] [8870] [DEBUG] GET /usuario/
+[2023-11-17 21:28:50 +0000] [8869] [DEBUG] GET /usuario/2/
+[2023-11-17 21:29:00 +0000] [8868] [DEBUG] PUT /usuario/2/
+[2023-11-17 21:29:04 +0000] [8867] [DEBUG] GET /usuario/
+[2023-11-17 21:29:05 +0000] [8870] [DEBUG] PATCH /usuario/2/
+[2023-11-17 21:29:09 +0000] [8869] [DEBUG] GET /usuario/
+[2023-11-17 21:29:13 +0000] [8866] [DEBUG] GET /usuario/
+[2023-11-17 21:29:24 +0000] [8870] [DEBUG] GET /usuario/2/
+[2023-11-17 21:29:31 +0000] [8869] [DEBUG] PUT /usuario/2/
+[2023-11-17 21:29:33 +0000] [8868] [DEBUG] GET /usuario/
+[2023-11-17 21:29:40 +0000] [8869] [DEBUG] GET /usuario/
+[2023-11-17 21:29:46 +0000] [8870] [DEBUG] GET /usuario/
+[2023-11-17 21:29:50 +0000] [8866] [DEBUG] GET /usuario/2/
+[2023-11-17 21:30:00 +0000] [8867] [DEBUG] PUT /usuario/2/
+[2023-11-17 21:30:03 +0000] [8869] [DEBUG] GET /usuario/
+[2023-11-17 21:30:06 +0000] [8868] [DEBUG] GET /usuario/
+[2023-11-17 21:30:07 +0000] [8866] [DEBUG] GET /usuario/
+[2023-11-17 21:30:08 +0000] [8868] [DEBUG] GET /usuario/
+[2023-11-17 21:30:13 +0000] [8866] [DEBUG] PATCH /usuario/2/
+[2023-11-17 21:30:14 +0000] [8868] [DEBUG] GET /usuario/
+[2023-11-17 21:32:01 +0000] [8868] [DEBUG] GET /usuario/
+[2023-11-17 21:32:06 +0000] [8867] [DEBUG] GET /usuario/
+[2023-11-17 22:01:52 +0000] [8869] [DEBUG] GET /
+[2023-11-17 22:25:04 +0000] [8866] [DEBUG] POST /usuario/
+[2023-11-17 22:25:06 +0000] [8870] [DEBUG] GET /usuario/
+[2023-11-17 22:26:02 +0000] [8867] [DEBUG] OPTIONS /usuario/4
+[2023-11-17 22:26:02 +0000] [8870] [DEBUG] GET /usuario/4
+[2023-11-17 22:26:02 +0000] [8866] [DEBUG] GET /usuario/
+[2023-11-17 22:26:03 +0000] [8870] [DEBUG] OPTIONS /usuario/4/
+[2023-11-17 22:26:03 +0000] [8867] [DEBUG] GET /usuario/4/
+[2023-11-17 22:26:05 +0000] [8870] [DEBUG] GET /usuario/
+[2023-11-17 22:26:38 +0000] [8868] [DEBUG] POST /usuario/
+[2023-11-17 22:26:40 +0000] [8869] [DEBUG] GET /usuario/
+[2023-11-17 22:30:59 +0000] [8869] [DEBUG] GET /usuario/
+[2023-11-17 22:31:12 +0000] [8870] [DEBUG] GET /usuario/2/
+[2023-11-17 22:31:22 +0000] [8868] [DEBUG] PUT /usuario/2/
+[2023-11-17 22:31:25 +0000] [8867] [DEBUG] PUT /usuario/2/
+[2023-11-17 22:31:39 +0000] [8870] [DEBUG] PUT /usuario/2/
+[2023-11-17 22:31:41 +0000] [8868] [DEBUG] GET /usuario/
+[2023-11-17 22:31:46 +0000] [8867] [DEBUG] GET /usuario/
+[2023-11-17 22:31:54 +0000] [8869] [DEBUG] GET /usuario/2/
+[2023-11-17 22:31:59 +0000] [8870] [DEBUG] GET /usuario/
+[2023-11-17 22:32:02 +0000] [8868] [DEBUG] GET /usuario/2/
+[2023-11-17 22:32:09 +0000] [8867] [DEBUG] PUT /usuario/2/
+[2023-11-17 22:32:23 +0000] [8866] [DEBUG] GET /usuario/
+[2023-11-17 22:32:24 +0000] [8868] [DEBUG] GET /usuario/
+[2023-11-17 22:32:31 +0000] [8869] [DEBUG] GET /usuario/2/
+[2023-11-17 22:32:47 +0000] [8870] [DEBUG] PUT /usuario/2/
+[2023-11-17 22:32:53 +0000] [8869] [DEBUG] GET /usuario/
+[2023-11-17 22:33:03 +0000] [8870] [DEBUG] GET /usuario/
+[2023-11-17 22:33:36 +0000] [8868] [DEBUG] POST /usuario/
+[2023-11-17 22:33:37 +0000] [8870] [DEBUG] GET /usuario/
+[2023-11-17 22:33:43 +0000] [8868] [DEBUG] OPTIONS /usuario/6
+[2023-11-17 22:33:43 +0000] [8867] [DEBUG] GET /usuario/6
+[2023-11-17 22:33:43 +0000] [8866] [DEBUG] OPTIONS /usuario/6/
+[2023-11-17 22:33:43 +0000] [8869] [DEBUG] GET /usuario/6/
+[2023-11-17 22:33:47 +0000] [8866] [DEBUG] GET /usuario/
+[2023-11-17 22:33:49 +0000] [8869] [DEBUG] GET /usuario/6/
+[2023-11-17 22:33:56 +0000] [8866] [DEBUG] PUT /usuario/6/
+[2023-11-17 22:34:03 +0000] [8870] [DEBUG] GET /usuario/
+[2023-11-17 22:34:04 +0000] [8867] [DEBUG] GET /usuario/
+[2023-11-17 22:34:23 +0000] [8869] [DEBUG] POST /login/
+[2023-11-17 22:34:25 +0000] [8867] [DEBUG] GET /usuario/6/
+[2023-11-17 22:34:29 +0000] [8869] [DEBUG] GET /usuario/6/
+[2023-11-17 22:34:42 +0000] [8868] [DEBUG] PUT /usuario/6/
+[2023-11-17 22:34:47 +0000] [8866] [DEBUG] GET /usuario/6/
+[2023-11-17 22:34:47 +0000] [8869] [DEBUG] PATCH /usuario/6/
+[2023-11-17 22:34:57 +0000] [8866] [DEBUG] GET /usuario/6/
+[2023-11-17 22:35:03 +0000] [8867] [DEBUG] GET /usuario/6/
+[2023-11-17 22:35:06 +0000] [8869] [DEBUG] GET /usuario/6/
+[2023-11-17 22:35:08 +0000] [8870] [DEBUG] GET /usuario/6/
+[2023-11-17 22:35:18 +0000] [8869] [DEBUG] GET /usuario/6/
+[2023-11-17 22:35:30 +0000] [8867] [DEBUG] POST /login/
+[2023-11-17 22:35:31 +0000] [8868] [DEBUG] GET /usuario/
+[2023-11-17 22:35:38 +0000] [8867] [DEBUG] GET /usuario/
+[2023-11-17 22:35:40 +0000] [8870] [DEBUG] GET /usuario/2/
+[2023-11-17 22:35:47 +0000] [8867] [DEBUG] GET /usuario/
+[2023-11-17 22:38:43 +0000] [8870] [DEBUG] GET /usuario/6/
+[2023-11-17 22:38:57 +0000] [8866] [DEBUG] PUT /usuario/6/
+[2023-11-17 22:39:01 +0000] [8869] [DEBUG] PATCH /usuario/6/
+[2023-11-17 22:39:01 +0000] [8870] [DEBUG] GET /usuario/
+[2023-11-17 22:39:13 +0000] [8869] [DEBUG] GET /usuario/6/
+[2023-11-17 22:39:19 +0000] [8866] [DEBUG] GET /usuario/2/
+[2023-11-17 22:39:23 +0000] [8867] [DEBUG] GET /usuario/
+[2023-11-17 22:45:14 +0000] [8869] [DEBUG] GET /QNTi
+[2023-11-17 22:45:15 +0000] [8867] [DEBUG] GET /y8v6
+[2023-11-17 22:47:28 +0000] [8866] [DEBUG] OPTIONS /usuario/2
+[2023-11-17 22:47:28 +0000] [8869] [DEBUG] GET /usuario/2
+[2023-11-17 22:47:28 +0000] [8870] [DEBUG] OPTIONS /usuario/2/
+[2023-11-17 22:47:28 +0000] [8868] [DEBUG] GET /usuario/2/
+[2023-11-17 22:47:54 +0000] [8867] [DEBUG] OPTIONS /login/
+[2023-11-17 22:47:54 +0000] [8866] [DEBUG] POST /login/
+[2023-11-17 22:47:55 +0000] [8867] [DEBUG] OPTIONS /usuario/5
+[2023-11-17 22:47:55 +0000] [8870] [DEBUG] GET /usuario/5
+[2023-11-17 22:47:55 +0000] [8868] [DEBUG] OPTIONS /usuario/5/
+[2023-11-17 22:47:55 +0000] [8869] [DEBUG] GET /usuario/5/
+[2023-11-17 22:48:09 +0000] [8868] [DEBUG] GET /usuario/5/
+[2023-11-17 22:48:34 +0000] [8869] [DEBUG] GET /usuario/5/
+[2023-11-17 22:48:43 +0000] [8866] [DEBUG] PUT /usuario/5/
+[2023-11-17 22:48:45 +0000] [8870] [DEBUG] PATCH /usuario/5/
+[2023-11-17 22:48:45 +0000] [8866] [DEBUG] GET /usuario/5/
+[2023-11-17 23:00:37 +0000] [8869] [DEBUG] GET /.git/config
+[2023-11-17 23:06:34 +0000] [8866] [DEBUG] GET /
+[2023-11-17 23:06:38 +0000] [8870] [DEBUG] GET /
+[2023-11-17 23:41:35 +0000] [8867] [DEBUG] OPTIONS /usuario/
+[2023-11-17 23:41:37 +0000] [8868] [DEBUG] GET /usuario/
+[2023-11-17 23:44:07 +0000] [8867] [DEBUG] GET /
+[2023-11-18 01:17:26 +0000] [8869] [DEBUG] OPTIONS /usuario/
+[2023-11-18 01:17:26 +0000] [8868] [DEBUG] GET /usuario/
+[2023-11-18 01:17:37 +0000] [8870] [DEBUG] OPTIONS /login/
+[2023-11-18 01:17:37 +0000] [8869] [DEBUG] POST /login/
+[2023-11-18 01:17:38 +0000] [8870] [DEBUG] GET /usuario/
+[2023-11-18 01:17:49 +0000] [8869] [DEBUG] GET /usuario/
+[2023-11-18 01:17:59 +0000] [8868] [DEBUG] GET /usuario/
+[2023-11-18 01:18:04 +0000] [8867] [DEBUG] GET /usuario/
+[2023-11-18 01:18:05 +0000] [8869] [DEBUG] OPTIONS /usuario/2
+[2023-11-18 01:18:05 +0000] [8866] [DEBUG] OPTIONS /usuario/2/
+[2023-11-18 01:18:05 +0000] [8870] [DEBUG] GET /usuario/2/
+[2023-11-18 01:18:41 +0000] [8870] [DEBUG] GET /usuario/
+[2023-11-18 01:18:43 +0000] [8866] [DEBUG] OPTIONS /type-product/
+[2023-11-18 01:18:43 +0000] [8867] [DEBUG] GET /type-product/
+[2023-11-18 01:18:46 +0000] [8866] [DEBUG] OPTIONS /epp/
+[2023-11-18 01:18:46 +0000] [8869] [DEBUG] GET /epp/
+[2023-11-18 01:18:49 +0000] [8866] [DEBUG] GET /usuario/
+[2023-11-18 01:18:54 +0000] [8869] [DEBUG] GET /type-product/
+[2023-11-18 01:18:56 +0000] [8866] [DEBUG] GET /epp/
+[2023-11-18 01:18:59 +0000] [8870] [DEBUG] GET /usuario/
+[2023-11-18 01:19:03 +0000] [8867] [DEBUG] GET /type-product/
+[2023-11-18 01:19:05 +0000] [8868] [DEBUG] GET /epp/
+[2023-11-18 01:19:13 +0000] [8867] [DEBUG] GET /epp/
+[2023-11-18 01:19:13 +0000] [8866] [DEBUG] GET /usuario/2/
+[2023-11-18 01:19:17 +0000] [8867] [DEBUG] GET /epp/
+[2023-11-18 01:19:17 +0000] [8870] [DEBUG] GET /epp/
+[2023-11-18 01:19:19 +0000] [8867] [DEBUG] GET /epp/
+[2023-11-18 01:19:49 +0000] [8870] [DEBUG] GET /epp/
+[2023-11-18 01:19:51 +0000] [8867] [DEBUG] GET /epp/
+[2023-11-18 01:19:53 +0000] [8868] [DEBUG] GET /usuario/2/
+[2023-11-18 01:19:56 +0000] [8867] [DEBUG] GET /type-product/
+[2023-11-18 01:20:05 +0000] [8869] [DEBUG] OPTIONS /type-product/1/
+[2023-11-18 01:20:05 +0000] [8868] [DEBUG] GET /type-product/1/
+[2023-11-18 01:20:07 +0000] [8869] [DEBUG] GET /type-product/
+[2023-11-18 01:20:07 +0000] [8868] [DEBUG] GET /epp/
+[2023-11-18 01:20:09 +0000] [8869] [DEBUG] GET /type-product/
+[2023-11-18 01:20:11 +0000] [8868] [DEBUG] GET /usuario/
+[2023-11-18 01:43:19 +0000] [8866] [DEBUG] OPTIONS /login/
+[2023-11-18 01:43:19 +0000] [8869] [DEBUG] POST /login/
+[2023-11-18 01:43:21 +0000] [8870] [DEBUG] OPTIONS /usuario/4
+[2023-11-18 01:43:21 +0000] [8867] [DEBUG] GET /usuario/4
+[2023-11-18 01:43:21 +0000] [8866] [DEBUG] OPTIONS /usuario/4/
+[2023-11-18 01:43:21 +0000] [8868] [DEBUG] GET /usuario/4/
+[2023-11-18 01:43:56 +0000] [8868] [DEBUG] GET /usuario/4/
+[2023-11-18 01:44:01 +0000] [8866] [DEBUG] PUT /usuario/4/
+[2023-11-18 01:44:01 +0000] [8868] [DEBUG] PATCH /usuario/4/
+[2023-11-18 01:44:02 +0000] [8866] [DEBUG] GET /usuario/4/
+[2023-11-18 01:44:29 +0000] [8867] [DEBUG] OPTIONS /usuario/
+[2023-11-18 01:44:29 +0000] [8868] [DEBUG] GET /usuario/
+[2023-11-18 01:44:44 +0000] [8867] [DEBUG] OPTIONS /type-product/
+[2023-11-18 01:44:44 +0000] [8869] [DEBUG] GET /type-product/
+[2023-11-18 01:44:45 +0000] [8867] [DEBUG] OPTIONS /usuario/2
+[2023-11-18 01:44:45 +0000] [8866] [DEBUG] OPTIONS /usuario/2/
+[2023-11-18 01:44:46 +0000] [8870] [DEBUG] GET /usuario/2/
+[2023-11-18 01:44:47 +0000] [8866] [DEBUG] GET /usuario/
+[2023-11-18 01:56:01 +0000] [8868] [DEBUG] OPTIONS /usuario/
+[2023-11-18 01:56:01 +0000] [8866] [DEBUG] GET /usuario/
+[2023-11-18 01:56:07 +0000] [8870] [DEBUG] OPTIONS /login/
+[2023-11-18 01:56:07 +0000] [8869] [DEBUG] POST /login/
+[2023-11-18 01:56:08 +0000] [8870] [DEBUG] GET /usuario/
+[2023-11-18 02:08:30 +0000] [8870] [DEBUG] OPTIONS /usuario/4
+[2023-11-18 02:08:30 +0000] [8868] [DEBUG] OPTIONS /usuario/4/
+[2023-11-18 02:08:30 +0000] [8867] [DEBUG] GET /usuario/4/
+[2023-11-18 02:44:30 +0000] [8869] [DEBUG] OPTIONS /usuario/5
+[2023-11-18 02:44:30 +0000] [8870] [DEBUG] OPTIONS /usuario/5/
+[2023-11-18 02:44:30 +0000] [8867] [DEBUG] GET /usuario/5/
+[2023-11-18 02:47:34 +0000] [8867] [DEBUG] GET /
+[2023-11-18 02:57:16 +0000] [8866] [DEBUG] GET /
+[2023-11-18 03:20:49 +0000] [8870] [DEBUG] GET /actuator/health
+[2023-11-18 03:53:12 +0000] [8867] [DEBUG] GET /sgms/images/sonicwall.png
+[2023-11-18 04:14:23 +0000] [8868] [DEBUG] GET /version
+[2023-11-18 04:22:32 +0000] [8867] [DEBUG] GET /
+[2023-11-18 04:25:49 +0000] [8868] [DEBUG] GET /webui/
+[2023-11-18 04:30:06 +0000] [8868] [DEBUG] GET /dns-query
+[2023-11-18 04:30:21 +0000] [8870] [DEBUG] GET /
+[2023-11-18 04:32:51 +0000] [8867] [DEBUG] GET /geoserver/web/
+[2023-11-18 04:33:27 +0000] [8867] [DEBUG] GET /.git/config
+[2023-11-18 04:35:22 +0000] [8866] [DEBUG] GET /
+[2023-11-18 04:35:23 +0000] [8869] [DEBUG] GET /favicon.ico
+[2023-11-18 04:35:23 +0000] [8868] [DEBUG] GET /favicon.ico
+[2023-11-18 04:35:24 +0000] [8867] [DEBUG] GET /
+[2023-11-18 04:35:24 +0000] [8870] [DEBUG] GET /favicon.ico
+[2023-11-18 04:41:40 +0000] [8869] [DEBUG] OPTIONS /usuario/
+[2023-11-18 04:41:40 +0000] [8866] [DEBUG] GET /usuario/
+[2023-11-18 04:41:42 +0000] [8870] [DEBUG] GET /favicon.ico
+[2023-11-18 04:41:43 +0000] [8867] [DEBUG] OPTIONS /usuario/
+[2023-11-18 04:41:43 +0000] [8868] [DEBUG] GET /usuario/
+[2023-11-18 05:45:05 +0000] [8868] [DEBUG] GET /ReportServer
+[2023-11-18 06:12:37 +0000] [8867] [DEBUG] GET /
+[2023-11-18 06:52:19 +0000] [8870] [DEBUG] GET /
+[2023-11-18 06:59:08 +0000] [8870] [DEBUG] GET /+CSCOE+/logon.html
+[2023-11-18 07:42:06 +0000] [8869] [DEBUG] GET /
+[2023-11-18 07:54:01 +0000] [8867] [DEBUG] GET /
+[2023-11-18 08:04:14 +0000] [8870] [DEBUG] GET /
+[2023-11-18 08:08:29 +0000] [8869] [DEBUG] GET /
+[2023-11-18 08:16:35 +0000] [8867] [DEBUG] GET /
+[2023-11-18 08:30:55 +0000] [8866] [DEBUG] GET /.env
+[2023-11-18 08:30:58 +0000] [8867] [DEBUG] POST /
+[2023-11-18 08:38:38 +0000] [8869] [DEBUG] GET /ecp/Current/exporttool/microsoft.exchange.ediscovery.exporttool.application
+[2023-11-18 08:57:52 +0000] [8870] [DEBUG] GET /
+[2023-11-18 08:57:52 +0000] [8868] [DEBUG] GET /favicon.ico
+[2023-11-18 09:32:51 +0000] [8867] [DEBUG] GET /.env
+[2023-11-18 09:32:52 +0000] [8866] [DEBUG] POST /
+[2023-11-18 09:32:52 +0000] [8867] [DEBUG] POST /core/.env
+[2023-11-18 09:32:53 +0000] [8866] [DEBUG] GET /core/.env
+[2023-11-18 09:32:54 +0000] [8867] [DEBUG] POST /
+[2023-11-18 09:32:54 +0000] [8870] [DEBUG] POST /core/.env
+[2023-11-18 09:47:33 +0000] [8869] [DEBUG] GET /ReportServer
+[2023-11-18 09:47:52 +0000] [8870] [DEBUG] GET /
+[2023-11-18 11:07:43 +0000] [8870] [DEBUG] GET /logon/LogonPoint/init.js
+[2023-11-18 11:44:23 +0000] [8868] [DEBUG] OPTIONS /usuario/
+[2023-11-18 11:44:23 +0000] [8870] [DEBUG] GET /usuario/
+[2023-11-18 11:44:26 +0000] [8867] [DEBUG] OPTIONS /login/
+[2023-11-18 11:44:26 +0000] [8866] [DEBUG] POST /login/
+[2023-11-18 11:44:27 +0000] [8867] [DEBUG] GET /usuario/
+[2023-11-18 11:44:51 +0000] [8866] [DEBUG] OPTIONS /type-product/
+[2023-11-18 11:44:51 +0000] [8868] [DEBUG] GET /type-product/
+[2023-11-18 11:44:56 +0000] [8866] [DEBUG] OPTIONS /epp/
+[2023-11-18 11:44:56 +0000] [8867] [DEBUG] GET /epp/
+[2023-11-18 11:45:07 +0000] [8866] [DEBUG] OPTIONS /usuario/3
+[2023-11-18 11:45:07 +0000] [8869] [DEBUG] GET /epp/
+[2023-11-18 11:45:07 +0000] [8866] [DEBUG] OPTIONS /usuario/3/
+[2023-11-18 11:45:07 +0000] [8870] [DEBUG] GET /usuario/3/
+[2023-11-18 11:45:11 +0000] [8866] [DEBUG] GET /epp/
+[2023-11-18 11:45:16 +0000] [8867] [DEBUG] GET /type-product/
+[2023-11-18 12:15:42 +0000] [8870] [DEBUG] GET /
+[2023-11-18 12:15:45 +0000] [8869] [DEBUG] GET /
+[2023-11-18 12:57:48 +0000] [8866] [DEBUG] POST /
+[2023-11-18 14:16:35 +0000] [8870] [DEBUG] GET /
+[2023-11-18 14:32:37 +0000] [8868] [DEBUG] GET /favicon.ico
+[2023-11-18 14:35:13 +0000] [8867] [DEBUG] GET /
